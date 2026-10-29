@@ -5,7 +5,7 @@
    «Открыл → нашёл → добавил → заказал».
 
    Экраны (состояние в URL — ссылкой можно поделиться, «Назад» работает):
-   • Главная            /shop            категории, баннер, Популярное, Часто заказывают, Все товары
+   • Главная            /shop            категории, фильтры и компактная сетка всех товаров
    • Категория          ?c=coffee[&s=…]  подразделы чипсами + сетка
    • Поиск              ?q=…             на телефоне — список строк
    • Все товары         ?view=all        вкладка «Каталог» на телефоне
@@ -153,7 +153,7 @@ export default function ShopPage() {
   const isHome = view === 'home' && !browsing
   const favApi = useMemo(() => ({ has: fav.has, toggle: fav.toggle }), [fav.has, fav.toggle])
 
-  const title = searching ? 'Поиск' : category ? CATEGORY_NAME[category] : view === 'all' ? 'Все товары' : view === 'mine' ? 'Повторить заказ' : ''
+  const title = searching ? 'Поиск' : category ? CATEGORY_NAME[category] : view === 'mine' ? 'Повторить заказ' : 'Все товары'
   const showSearchRow = isHome || searching || searchOpen
 
   const grid = (list: CatalogGroup[], opts: { eager?: boolean; hearts?: boolean } = {}) => (
@@ -268,7 +268,7 @@ export default function ShopPage() {
             <div className="sh-sec-head sh-desk"><h1 className="sh-sec-title">Повторить заказ</h1></div>
             <MyPurchases isClient={isClient} orders={data.orders} byId={byId} fav={{ ...favApi, ids: fav.ids }} pricing={pricing} cart={cart} onOpen={openProduct} onToast={setToast} />
           </section>
-        ) : browsing ? (
+        ) : browsing || isHome ? (
           <section className="sh-sec">
             <div className="sh-sec-head">
               <h1 className="sh-sec-title sh-desk">{title}</h1>

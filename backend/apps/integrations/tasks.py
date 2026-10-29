@@ -3,6 +3,7 @@ import time
 from datetime import timedelta
 
 from celery import shared_task
+from django.core.management import call_command
 from django.db import transaction
 from django.db.models import Q
 from django.utils import timezone
@@ -16,6 +17,16 @@ from .onec import OneCClient, OneCNotConfigured
 
 logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 12
+
+
+@shared_task(ignore_result=True)
+def sync_onec_stock():
+    call_command("sync_onec", stock=True)
+
+
+@shared_task(ignore_result=True)
+def sync_onec_catalog():
+    call_command("sync_onec", catalog=True, prices=True, images=True)
 
 
 def _refresh_availability(order):

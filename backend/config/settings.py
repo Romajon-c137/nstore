@@ -99,6 +99,21 @@ STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
     "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
 }
+if env("MEDIA_STORAGE", "filesystem").lower() == "s3":
+    STORAGES["default"] = {
+        "BACKEND": "storages.backends.s3.S3Storage",
+        "OPTIONS": {
+            "bucket_name": env("S3_MEDIA_BUCKET"),
+            "access_key": env("S3_ACCESS_KEY_ID"),
+            "secret_key": env("S3_SECRET_ACCESS_KEY"),
+            "endpoint_url": env("S3_ENDPOINT_URL") or None,
+            "region_name": env("S3_REGION", "us-east-1"),
+            "custom_domain": env("S3_MEDIA_DOMAIN") or None,
+            "default_acl": None,
+            "file_overwrite": False,
+            "querystring_auth": env_bool("S3_QUERYSTRING_AUTH", False),
+        },
+    }
 
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Lax"
@@ -135,6 +150,8 @@ ONEC_BASE_URL = env("ONEC_BASE_URL")
 ONEC_USERNAME = env("ONEC_USERNAME")
 ONEC_PASSWORD = env("ONEC_PASSWORD")
 ONEC_TIMEOUT_SECONDS = float(env("ONEC_TIMEOUT_SECONDS", "20"))
+ONEC_RETRY_ATTEMPTS = int(env("ONEC_RETRY_ATTEMPTS", "4"))
+ONEC_RETRY_BACKOFF_SECONDS = float(env("ONEC_RETRY_BACKOFF_SECONDS", "0.75"))
 ONEC_VERIFY_TLS = env_bool("ONEC_VERIFY_TLS", True)
 ONEC_MEDIA_URL_TEMPLATE = env("ONEC_MEDIA_URL_TEMPLATE")
 ONEC_IMAGE_MAX_SIDE = int(env("ONEC_IMAGE_MAX_SIDE", "1600"))
@@ -142,6 +159,18 @@ ONEC_IMAGE_WEBP_QUALITY = int(env("ONEC_IMAGE_WEBP_QUALITY", "82"))
 ONEC_RETAIL_PRICE_TYPE_ID = env("ONEC_RETAIL_PRICE_TYPE_ID")
 ONEC_B2B_PRICE_TYPE_IDS = [x.strip() for x in env("ONEC_B2B_PRICE_TYPE_IDS").split(",") if x.strip()]
 ONEC_WAREHOUSE_IDS = [x.strip() for x in env("ONEC_WAREHOUSE_IDS").split(",") if x.strip()]
+ONEC_SYNC_ENABLED = env_bool("ONEC_SYNC_ENABLED", False)
+if ONEC_SYNC_ENABLED:
+    CELERY_BEAT_SCHEDULE.update({
+        "sync-onec-stock": {
+            "task": "apps.integrations.tasks.sync_onec_stock",
+            "schedule": float(env("ONEC_STOCK_SYNC_SECONDS", "300")),
+        },
+        "sync-onec-catalog": {
+            "task": "apps.integrations.tasks.sync_onec_catalog",
+            "schedule": float(env("ONEC_CATALOG_SYNC_SECONDS", "3600")),
+        },
+    })
 
 CRM_MODE = env("CRM_MODE", "disabled")
 CRM_BASE_URL = env("CRM_BASE_URL")

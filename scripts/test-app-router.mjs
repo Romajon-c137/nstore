@@ -22,9 +22,11 @@ try {
   await page.goto(`${origin}/shop?guest=1`, { waitUntil: 'networkidle0' })
   await page.waitForSelector('.sh-card-name', { timeout: 15000 })
   const productUrl = await page.$eval('.sh-card-name', element => element.getAttribute('href'))
+  const productId = await page.$eval('.sh-card', element => element.getAttribute('data-product-id'))
   // Older synthetic fixtures may still use button cards; the final migrated
   // storefront must expose proper links.
   assert.ok(productUrl?.startsWith('/product/'), 'Catalog product must have an href')
+  assert.ok(productId, 'Catalog product exposes its source id for the legacy link check')
   await page.screenshot({ path: path.join(output, 'catalog-desktop.png'), fullPage: true })
   await page.click('.sh-card-name')
   await page.waitForSelector('h1.sh-pd-name')
@@ -46,7 +48,7 @@ try {
   await page.reload({ waitUntil: 'networkidle0' })
   await page.screenshot({ path: path.join(output, 'product-mobile.png'), fullPage: true })
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), 'No horizontal overflow on mobile')
-  await page.goto(`${origin}/shop?guest=1&p=demo-1`, { waitUntil: 'networkidle0' })
+  await page.goto(`${origin}/shop?guest=1&p=${encodeURIComponent(productId)}`, { waitUntil: 'networkidle0' })
   await page.waitForFunction(() => location.pathname.startsWith('/product/'), { timeout: 15000 })
   await page.goto(`${origin}/`, { waitUntil: 'networkidle0' })
   await page.waitForSelector('.lp-product-grid a[href^="/product/"]', { timeout: 15000 })

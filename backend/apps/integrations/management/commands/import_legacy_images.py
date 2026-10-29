@@ -35,12 +35,21 @@ class Command(BaseCommand):
             "select": "sku,name,image_url",
             "is_active": "eq.true",
             "image_url": "not.is.null",
-            "limit": "1000",
         }
         with httpx.Client(timeout=30, follow_redirects=True, headers=headers) as client:
-            response = client.get(f"{base_url}/rest/v1/products", params=params)
-            response.raise_for_status()
-            rows = [row for row in response.json() if (row.get("sku") or "").strip() and (row.get("image_url") or "").strip()]
+            rows = []
+            page_size = 1000
+            for offset in range(0, 100_000, page_size):
+                response = client.get(
+                    f"{base_url}/rest/v1/products",
+                    params=params | {"limit": str(page_size), "offset": str(offset)},
+                )
+                response.raise_for_status()
+                page = response.json()
+                rows.extend(page)
+                if len(page) < page_size:
+                    break
+            rows = [row for row in rows if (row.get("sku") or "").strip() and (row.get("image_url") or "").strip()]
 
         variants = {
             variant.sku.strip(): variant

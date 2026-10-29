@@ -21,7 +21,7 @@ const { mapDjangoProduct } = load('@/entities/catalog/model/django-product')
 const { productHref, findProduct } = load('@/entities/catalog/model/routes')
 const { productSlug } = load('@/shared/lib/seo')
 const product = { id: 'product-1', title: 'Кофе', slug: 'coffee', brand: 'Toreo', description: 'Описание товара', category: { id: 'coffee', name: 'Кофе', slug: 'coffee' }, variants: [] }
-const variant = { id: 'variant-1', sku: '1001', barcode: '123', source_name: 'Кофе Toreo 1 кг', unit: 'шт', package_label: '1 кг', min_qty: '12', qty_step: '12', price: { amount: '8900.50' }, stock: '24', availability: 'sufficient', images: [{ url: '/secondary.jpg', is_primary: false }, { url: '/primary.jpg', is_primary: true }] }
+const variant = { id: 'variant-1', sku: '1001', barcode: '123', source_name: 'Кофе Toreo 1 кг', unit: 'шт', package_label: 'Кейс', package_qty: '12', min_qty: '12', qty_step: '12', price: { amount: '8900.50' }, stock: '24', availability: 'sufficient', images: [{ url: '/secondary.jpg', is_primary: false }, { url: '/primary.jpg', is_primary: true }] }
 
 test('Django card retains description, approved price, packaging and primary media', () => {
   const card = mapDjangoProduct(product, variant)
@@ -29,6 +29,7 @@ test('Django card retains description, approved price, packaging and primary med
   assert.equal(card.price, 8900.5)
   assert.equal(card.minQty, 12)
   assert.equal(card.step, 12)
+  assert.equal(card.package, '1 кг • 12 шт')
   assert.equal(card.stock, 24)
   assert.equal(card.image, '/primary.jpg')
   assert.equal(card.priceLists.wholesale, null, 'Never infer a hidden B2B price from public data')

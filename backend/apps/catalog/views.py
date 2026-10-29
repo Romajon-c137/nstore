@@ -1,4 +1,5 @@
-from django.db.models import Prefetch
+from django.core.exceptions import ValidationError as DjangoValidationError
+from django.db.models import Prefetch, Q, Sum
 from django.shortcuts import get_object_or_404
 from rest_framework import generics
 from rest_framework.exceptions import NotFound, ValidationError
@@ -37,11 +38,17 @@ def variant_storefront_slug(variant):
     return f"{name}-{sku}" if sku else name
 
 
+def sellable_variants():
+    return ProductVariant.objects.filter(is_active=True).annotate(
+        sellable_quantity=Sum("stocks__quantity", filter=Q(stocks__warehouse__is_sellable=True))
+    ).filter(sellable_quantity__gt=0)
+
+
 def product_queryset():
-    variants = ProductVariant.objects.filter(is_active=True).prefetch_related(
+    variants = sellable_variants().prefetch_related(
         Prefetch("media", queryset=ProductMedia.objects.order_by("sort_order")), "prices", "stocks__warehouse"
     )
-    return Product.objects.filter(status=Product.Status.PUBLISHED).select_related("category").prefetch_related(
+    return Product.objects.filter(status=Product.Status.PUBLISHED, variants__in=sellable_variants()).distinct().select_related("category").prefetch_related(
         Prefetch("variants", queryset=variants)
     )
 
@@ -71,16 +78,14 @@ class ProductLookupView(APIView):
         if not slug:
             raise ValidationError({"slug": "Укажите slug товара"})
 
-        candidates = ProductVariant.objects.filter(
-            is_active=True, product__status=Product.Status.PUBLISHED
-        ).select_related("product").only("id", "sku", "source_name", "product__id", "product__title")
+        candidates = sellable_variants().filter(product__status=Product.Status.PUBLISHED).select_related("product").only(
+            "id", "sku", "source_name", "product__id", "product__title"
+        )
         variant = next((item for item in candidates.iterator(chunk_size=500) if variant_storefront_slug(item) == slug), None)
         if variant is None:
             try:
-                variant = ProductVariant.objects.select_related("product").get(
-                    pk=slug, is_active=True, product__status=Product.Status.PUBLISHED
-                )
-            except (ProductVariant.DoesNotExist, ValueError) as exc:
+                variant = sellable_variants().select_related("product").get(pk=slug, product__status=Product.Status.PUBLISHED)
+            except (ProductVariant.DoesNotExist, DjangoValidationError, ValueError) as exc:
                 raise NotFound("Товар не найден") from exc
 
         product = get_object_or_404(product_queryset(), pk=variant.product_id)

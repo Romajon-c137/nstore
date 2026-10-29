@@ -1,11 +1,12 @@
 from io import BytesIO
+from decimal import Decimal
 from urllib.parse import unquote
 
 import httpx
 from PIL import Image
 
 from apps.integrations.onec import OneCClient
-from apps.integrations.onec_sync import _compressed_webp, _source_datetime
+from apps.integrations.onec_sync import _compressed_webp, _package_rules, _source_datetime
 
 
 def test_onec_condition_uses_guid_literals():
@@ -24,6 +25,28 @@ def test_onec_get_uses_percent20_not_plus():
     client.base_url = "https://onec.example/odata/"
     client.client = httpx.Client(transport=httpx.MockTransport(handler))
     assert client.get("Catalog_Номенклатура", {"$filter": "IsFolder eq false"}) == [{"ok": True}]
+    client.close()
+
+
+def test_onec_retries_temporary_server_errors(monkeypatch):
+    attempts = 0
+
+    def handler(request):
+        nonlocal attempts
+        attempts += 1
+        if attempts < 3:
+            return httpx.Response(503)
+        return httpx.Response(200, json={"value": [{"ok": True}]})
+
+    monkeypatch.setattr("apps.integrations.onec.time.sleep", lambda _: None)
+    client = object.__new__(OneCClient)
+    client.base_url = "https://onec.example/odata/"
+    client.max_attempts = 4
+    client.retry_backoff_seconds = 0
+    client.client = httpx.Client(transport=httpx.MockTransport(handler))
+
+    assert client.get("Catalog_Номенклатура") == [{"ok": True}]
+    assert attempts == 3
     client.close()
 
 
@@ -75,3 +98,20 @@ def test_onec_get_bytes_uses_same_authenticated_client():
 
     assert content == b"image"
     assert content_type == "image/png"
+
+
+def test_onec_package_rules_require_full_outer_case():
+    rows = [
+        {"Owner": "product-1", "Owner_Type": "StandardODATA.Catalog_Номенклатура", "Description": "Упаковка", "Коэффициент": 6, "DeletionMark": False},
+        {"Owner": "product-1", "Owner_Type": "StandardODATA.Catalog_Номенклатура", "Description": "Кейс", "Коэффициент": 12, "DeletionMark": False},
+        {"Owner": "product-2", "Owner_Type": "StandardODATA.Catalog_Номенклатура", "Description": "Кейс", "Коэффициент": 24, "DeletionMark": False},
+        {"Owner": "product-3", "Owner_Type": "StandardODATA.Catalog_Номенклатура", "Description": "Штука", "Коэффициент": 1, "DeletionMark": False},
+        {"Owner": "deleted", "Owner_Type": "StandardODATA.Catalog_Номенклатура", "Description": "Кейс", "Коэффициент": 10, "DeletionMark": True},
+    ]
+
+    rules = _package_rules(rows)
+
+    assert rules["product-1"] == {"package_label": "Кейс", "package_qty": Decimal("12"), "min_qty": Decimal("12"), "qty_step": Decimal("12")}
+    assert rules["product-2"]["qty_step"] == Decimal("24")
+    assert "product-3" not in rules
+    assert "deleted" not in rules

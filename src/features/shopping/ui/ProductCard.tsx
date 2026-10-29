@@ -45,7 +45,7 @@ export const ProductCard = memo(function ProductCard({ group, pricing, cart, onO
   const isFav = fav?.has(p.id) ?? false
 
   return (
-    <article className="sh-card">
+    <article className="sh-card" data-product-id={p.id}>
       {label && <span className={`sh-badge ${label.cls}`}>{label.text}</span>}
       {fav && (
         <button className={`sh-card-fav${isFav ? ' on' : ''}`} onClick={() => fav.toggle(p.id)} aria-pressed={isFav} aria-label={isFav ? 'Убрать из избранного' : 'В избранное'}>

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import time
 from collections.abc import Iterator
 from decimal import Decimal
 from urllib.parse import quote
@@ -23,21 +24,38 @@ class OneCClient:
             verify=settings.ONEC_VERIFY_TLS,
             headers={"Accept": "application/json"},
         )
+        self.max_attempts = max(1, settings.ONEC_RETRY_ATTEMPTS)
+        self.retry_backoff_seconds = max(0.0, settings.ONEC_RETRY_BACKOFF_SECONDS)
 
     def close(self):
         self.client.close()
 
+    def _request(self, url: str, *, headers: dict | None = None) -> httpx.Response:
+        attempts = getattr(self, "max_attempts", 3)
+        backoff = getattr(self, "retry_backoff_seconds", 0.5)
+        for attempt in range(attempts):
+            try:
+                response = self.client.get(url, headers=headers)
+                if response.status_code != 429 and response.status_code < 500:
+                    response.raise_for_status()
+                    return response
+                response.raise_for_status()
+            except (httpx.TransportError, httpx.HTTPStatusError) as exc:
+                retryable = isinstance(exc, httpx.TransportError) or exc.response.status_code == 429 or exc.response.status_code >= 500
+                if not retryable or attempt + 1 >= attempts:
+                    raise
+                time.sleep(backoff * (2 ** attempt))
+        raise RuntimeError("unreachable")
+
     def get(self, path: str, params: dict | None = None) -> list[dict]:
         query = str(httpx.QueryParams((params or {}) | {"$format": "json"})).replace("+", "%20")
-        response = self.client.get(self.base_url + path + "?" + query)
-        response.raise_for_status()
+        response = self._request(self.base_url + path + "?" + query)
         body = response.json()
         return body.get("value", body.get("d", {}).get("results", []))
 
     def get_bytes(self, path_or_url: str) -> tuple[bytes, str]:
         url = path_or_url if path_or_url.startswith(("http://", "https://")) else self.base_url + path_or_url.lstrip("/")
-        response = self.client.get(url, headers={"Accept": "image/*,application/octet-stream"})
-        response.raise_for_status()
+        response = self._request(url, headers={"Accept": "image/*,application/octet-stream"})
         return response.content, response.headers.get("content-type", "").split(";", 1)[0].lower()
 
     def pages(self, path: str, *, select: str, filter_: str = "", order_by: str = "", page_size: int = 500) -> Iterator[list[dict]]:

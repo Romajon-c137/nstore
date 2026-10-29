@@ -18,6 +18,40 @@ from apps.catalog.models import Category, Price, PriceList, Product, ProductMedi
 from .onec import OneCClient
 
 
+PACKAGE_MARKERS = ("кейс", "упаков", "короб", "блок")
+
+
+def _package_rules(rows):
+    """Return the strict full-package sale rule for each 1C product owner."""
+    packages = {}
+    scores = {}
+    for row in rows:
+        label = (row.get("Description") or "").strip()
+        owner = row.get("Owner")
+        owner_type = row.get("Owner_Type") or ""
+        quantity = Decimal(str(row.get("Коэффициент") or 0))
+        if (
+            row.get("DeletionMark")
+            or not owner
+            or not owner_type.endswith("Catalog_Номенклатура")
+            or quantity <= 1
+            or not any(marker in label.casefold() for marker in PACKAGE_MARKERS)
+        ):
+            continue
+        # A case is the outer sale package. If 1C contains several package
+        # units, prefer it over an inner pack and then prefer the larger one.
+        score = (label.casefold() == "кейс", quantity, label.casefold())
+        if owner not in scores or score > scores[owner]:
+            scores[owner] = score
+            packages[owner] = {
+                "package_label": label,
+                "package_qty": quantity,
+                "min_qty": quantity,
+                "qty_step": quantity,
+            }
+    return packages
+
+
 def _slug(title: str, source_ref: str) -> str:
     base = slugify(title, allow_unicode=True)[:430] or "product"
     return f"{base}-{source_ref[:8]}"
@@ -55,6 +89,7 @@ class OneCSyncService:
         self.dry_run = dry_run
         self.now = timezone.now()
         self.unit_names = {}
+        self.package_rules = {}
 
     def categories(self) -> dict:
         rows = self.client.get(
@@ -97,10 +132,17 @@ class OneCSyncService:
                     if ref in seen:
                         continue
                     seen.add(ref)
+                    package = self.package_rules.get(ref, {
+                        "package_label": "",
+                        "package_qty": Decimal("1"),
+                        "min_qty": Decimal("1"),
+                        "qty_step": Decimal("1"),
+                    })
                     defaults = {
                         "sku": (row.get("Артикул") or row.get("Code") or "").strip(),
                         "source_name": (row.get("Description") or "Без названия").strip(),
                         "unit": self.unit_names.get(row.get("ЕдиницаИзмерения_Key"), "шт"),
+                        **package,
                         "raw_source": row,
                         "is_active": True,
                     }
@@ -141,6 +183,15 @@ class OneCSyncService:
         warehouses = self.client.get("Catalog_СтруктурныеЕдиницы", {"$select": "Ref_Key,Description,ТипСтруктурнойЕдиницы,Недействителен,DeletionMark", "$filter": "Недействителен eq false and DeletionMark eq false"})
         units = self.client.get("Catalog_КлассификаторЕдиницИзмерения", {"$select": "Ref_Key,Description,DeletionMark", "$filter": "DeletionMark eq false"})
         self.unit_names = {row["Ref_Key"]: (row.get("Description") or "шт").strip() for row in units}
+        package_rows = []
+        for rows in self.client.pages(
+            "Catalog_ЕдиницыИзмерения",
+            select="Ref_Key,Description,Owner,Owner_Type,Коэффициент,DeletionMark",
+            filter_="DeletionMark eq false",
+            order_by="Owner,Ref_Key",
+        ):
+            package_rows.extend(rows)
+        self.package_rules = _package_rules(package_rows)
         if not self.dry_run:
             for row in price_types:
                 ref = row["Ref_Key"]
@@ -151,7 +202,12 @@ class OneCSyncService:
                     continue
                 ref = row["Ref_Key"]
                 Warehouse.objects.update_or_create(source_ref=ref, defaults={"name": row["Description"], "is_sellable": not settings.ONEC_WAREHOUSE_IDS or ref in settings.ONEC_WAREHOUSE_IDS})
-        return {"price_lists": len(price_types), "warehouses": len(warehouses), "units": len(units)}
+        return {
+            "price_lists": len(price_types),
+            "warehouses": len(warehouses),
+            "units": len(units),
+            "package_units": len(self.package_rules),
+        }
 
     def prices(self) -> dict:
         allowed = [x for x in [settings.ONEC_RETAIL_PRICE_TYPE_ID, *settings.ONEC_B2B_PRICE_TYPE_IDS] if x]

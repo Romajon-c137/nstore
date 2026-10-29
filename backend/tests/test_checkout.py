@@ -56,6 +56,26 @@ def test_zero_stock_is_absent_but_order_is_accepted(catalog_item):
 
 
 @pytest.mark.django_db
+def test_case_product_cannot_be_ordered_by_single_units(catalog_item):
+    variant, _ = catalog_item
+    variant.package_label = "Кейс"
+    variant.package_qty = Decimal("12")
+    variant.min_qty = Decimal("12")
+    variant.qty_step = Decimal("12")
+    variant.save(update_fields=["package_label", "package_qty", "min_qty", "qty_step"])
+    client = APIClient()
+    headers = {"HTTP_X_GUEST_TOKEN": str(uuid.uuid4())}
+    payload = {"contact_name": "Тест", "contact_phone": "+77000000000", "lines": [{"variant_id": str(variant.id), "quantity": "1"}]}
+
+    rejected = client.post("/api/v1/checkout/", payload, format="json", HTTP_IDEMPOTENCY_KEY="case-single", **headers)
+    accepted = client.post("/api/v1/checkout/", {**payload, "lines": [{"variant_id": str(variant.id), "quantity": "12"}]}, format="json", HTTP_IDEMPOTENCY_KEY="case-full", **headers)
+
+    assert rejected.status_code == 400
+    assert "минимум 12" in str(rejected.data)
+    assert accepted.status_code == 201, accepted.data
+
+
+@pytest.mark.django_db
 def test_missing_price_is_null_and_does_not_become_zero(catalog_item):
     variant, _ = catalog_item
     variant.prices.all().delete()

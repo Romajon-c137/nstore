@@ -20,6 +20,21 @@ def test_catalog_list_shape_and_health(catalog_item):
 
 
 @pytest.mark.django_db
+def test_catalog_hides_zero_stock_products(catalog_item):
+    variant, stock = catalog_item
+    stock.quantity = 0
+    stock.save(update_fields=["quantity"])
+    client = APIClient()
+
+    products = client.get("/api/v1/catalog/products/")
+    lookup = client.get("/api/v1/catalog/products/lookup/?slug=testovyy-kofe-sku-1")
+
+    assert products.status_code == 200
+    assert products.data["count"] == 0
+    assert lookup.status_code == 404
+
+
+@pytest.mark.django_db
 def test_storefront_lookup_and_relative_media_url(catalog_item):
     variant, _ = catalog_item
     ProductMedia.objects.create(
