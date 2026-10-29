@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             targetNamespace="http://nstore.kz/bpmn"
+             id="NstoreArchitecture">
+
+  <!-- ═══════════════════════════════════════════════════
+       POOL 1: КЛИЕНТСКИЙ ПОТОК (Авторизация + Кабинет)
+       ═══════════════════════════════════════════════════ -->
+  <collaboration id="NstoreCollaboration">
+
+    <participant id="pool_client" name="Клиент" processRef="proc_client" />
+    <participant id="pool_manager" name="Менеджер / Логист / Админ (CRM)" processRef="proc_crm" />
+    <participant id="pool_system" name="Система (Edge Functions + Supabase)" processRef="proc_system" />
+    <participant id="pool_whatsapp" name="WhatsApp Business API" processRef="proc_wa" />
+
+    <!-- Message Flows -->
+    <messageFlow id="mf1" sourceRef="task_client_request_otp" targetRef="task_ef_otp_send" name="phone number" />
+    <messageFlow id="mf2" sourceRef="task_ef_otp_send" targetRef="event_wa_otp_received" name="OTP code via WA" />
+    <messageFlow id="mf3" sourceRef="task_client_verify_otp" targetRef="task_ef_otp_verify" name="phone + code" />
+    <messageFlow id="mf4" sourceRef="task_ef_otp_verify" targetRef="event_client_logged_in" name="session token" />
+
+    <messageFlow id="mf5" sourceRef="task_wa_incoming" targetRef="task_ef_webhook" name="incoming message" />
+    <messageFlow id="mf6" sourceRef="task_crm_send_wa" targetRef="task_ef_wa_send" name="message payload" />
+    <messageFlow id="mf7" sourceRef="task_ef_wa_send" targetRef="task_wa_deliver" name="send API call" />
+
+    <messageFlow id="mf8" sourceRef="task_crm_create_order" targetRef="task_sys_save_order" name="order data" />
+    <messageFlow id="mf9" sourceRef="task_sys_save_order" targetRef="event_order_created" name="order_id" />
+  </collaboration>
+
+  <!-- ═══════════════════════════
+       PROCESS 1: КЛИЕНТ
+       ═══════════════════════════ -->
+  <process id="proc_client" name="Клиент" isExecutable="false">
+
+    <!-- START: Открывает сайт -->
+    <startEvent id="start_client" name="Открывает сайт /cabinet">
+      <outgoing>sf_c1</outgoing>
+    </startEvent>
+
+    <!-- Gateway: авторизован? -->
+    <exclusiveGateway id="gw_client_auth" name="Авторизован?">
+      <incoming>sf_c1</incoming>
+      <outgoing>sf_c2</outgoing>
+      <outgoing>sf_c3</outgoing>
+    </exclusiveGateway>
+
+    <!-- Запрос OTP -->
+    <task id="task_client_request_otp" name="Вводит номер телефона&#10;(запрос OTP)">
+      <incoming>sf_c2</incoming>
+      <outgoing>sf_c4</outgoing>
+    </task>
+
+    <!-- Ждёт WA сообщения -->
+    <intermediateCatchEvent id="event_wa_otp_received" name="Получает OTP в WhatsApp">
+      <incoming>sf_c4</incoming>
+      <outgoing>sf_c5</outgoing>
+      <messageEventDefinition />
+    </intermediateCatchEvent>
+
+    <!-- Вводит OTP -->
+    <task id="task_client_verify_otp" name="Вводит OTP код">
+      <incoming>sf_c5</incoming>
+      <outgoing>sf_c6</outgoing>
+    </task>
+
+    <!-- Авторизован -->
+    <intermediateCatchEvent id="event_client_logged_in" name="Получает сессию">
+      <incoming>sf_c6</incoming>
+      <outgoing>sf_c7</outgoing>
+      <messageEventDefinition />
+    </intermediateCatchEvent>
+
+    <!-- В кабинете -->
+    <task id="task_client_cabinet" name="Личный кабинет /cabinet&#10;(заказы, продукты, профиль)">
+      <incoming>sf_c3</incoming>
+      <incoming>sf_c7</incoming>
+      <outgoing>sf_c8</outgoing>
+    </task>
+
+    <!-- Просматривает каталог -->
+    <task id="task_client_catalog" name="Просматривает каталог&#10;(products: 1229 SKU)">
+      <incoming>sf_c8</incoming>
+      <outgoing>sf_c9</outgoing>
+    </task>
+
+    <!-- Оформляет заказ -->
+    <task id="task_client_order" name="Оформляет заказ">
+      <incoming>sf_c9</incoming>
+      <outgoing>sf_c10</outgoing>
+    </task>
+
+    <!-- Отслеживает статус -->
+    <task id="task_client_track" name="Отслеживает статус заявки&#10;(new→confirmed→picking→delivering→done)">
+      <incoming>sf_c10</incoming>
+      <outgoing>sf_c_end</outgoing>
+    </task>
+
+    <endEvent id="end_client" name="Заказ выполнен">
+      <incoming>sf_c_end</incoming>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="sf_c1" sourceRef="start_client" targetRef="gw_client_auth" />
+    <sequenceFlow id="sf_c2" sourceRef="gw_client_auth" targetRef="task_client_request_otp" name="Нет" />
+    <sequenceFlow id="sf_c3" sourceRef="gw_client_auth" targetRef="task_client_cabinet" name="Да" />
+    <sequenceFlow id="sf_c4" sourceRef="task_client_request_otp" targetRef="event_wa_otp_received" />
+    <sequenceFlow id="sf_c5" sourceRef="event_wa_otp_received" targetRef="task_client_verify_otp" />
+    <sequenceFlow id="sf_c6" sourceRef="task_client_verify_otp" targetRef="event_client_logged_in" />
+    <sequenceFlow id="sf_c7" sourceRef="event_client_logged_in" targetRef="task_client_cabinet" />
+    <sequenceFlow id="sf_c8" sourceRef="task_client_cabinet" targetRef="task_client_catalog" />
+    <sequenceFlow id="sf_c9" sourceRef="task_client_catalog" targetRef="task_client_order" />
+    <sequenceFlow id="sf_c10" sourceRef="task_client_order" targetRef="task_client_track" />
+    <sequenceFlow id="sf_c_end" sourceRef="task_client_track" targetRef="end_client" />
+  </process>
+
+  <!-- ═══════════════════════════
+       PROCESS 2: CRM (Сотрудники)
+       ═══════════════════════════ -->
+  <process id="proc_crm" name="CRM" isExecutable="false">
+
+    <startEvent id="start_crm" name="Открывает CRM /crm">
+      <outgoing>sf_crm1</outgoing>
+    </startEvent>
+
+    <!-- Дашборд -->
+    <task id="task_crm_dash" name="Дашборд&#10;(KPI: выручка, заявки,&#10;конверсия, задачи)">
+      <incoming>sf_crm1</incoming>
+      <outgoing>sf_crm2</outgoing>
+    </task>
+
+    <!-- Gateway: выбор вкладки -->
+    <exclusiveGateway id="gw_crm_tab" name="Выбор раздела">
+      <incoming>sf_crm2</incoming>
+      <outgoing>sf_crm_orders</outgoing>
+      <outgoing>sf_crm_board</outgoing>
+      <outgoing>sf_crm_clients</outgoing>
+      <outgoing>sf_crm_logistics</outgoing>
+      <outgoing>sf_crm_wa</outgoing>
+      <outgoing>sf_crm_content</outgoing>
+      <outgoing>sf_crm_roles</outgoing>
+    </exclusiveGateway>
+
+    <!-- Заявки -->
+    <subProcess id="sub_orders" name="Заявки (Orders)&#10;crm_tasks [task_type=order]">
+      <incoming>sf_crm_orders</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+
+      <startEvent id="start_sub_orders"><outgoing>sf_so1</outgoing></startEvent>
+
+      <task id="task_crm_list_orders" name="Список заявок&#10;(фильтр по статусу FSM)">
+        <incoming>sf_so1</incoming>
+        <outgoing>sf_so2</outgoing>
+      </task>
+
+      <task id="task_crm_create_order" name="Создать заявку&#10;(client_name, phone,&#10;address, total, items JSONB)">
+        <incoming>sf_so2</incoming>
+        <outgoing>sf_so3</outgoing>
+      </task>
+
+      <task id="task_crm_change_status" name="Изменить статус заявки&#10;new→confirmed→picking&#10;→delivering→done/cancelled">
+        <incoming>sf_so3</incoming>
+        <outgoing>sf_so_end</outgoing>
+      </task>
+
+      <endEvent id="end_sub_orders"><incoming>sf_so_end</incoming></endEvent>
+
+      <sequenceFlow id="sf_so1" sourceRef="start_sub_orders" targetRef="task_crm_list_orders" />
+      <sequenceFlow id="sf_so2" sourceRef="task_crm_list_orders" targetRef="task_crm_create_order" />
+      <sequenceFlow id="sf_so3" sourceRef="task_crm_create_order" targetRef="task_crm_change_status" />
+      <sequenceFlow id="sf_so_end" sourceRef="task_crm_change_status" targetRef="end_sub_orders" />
+    </subProcess>
+
+    <!-- Kanban доска -->
+    <subProcess id="sub_board" name="Доска (Board)&#10;crm_projects → crm_columns → crm_tasks">
+      <incoming>sf_crm_board</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+
+      <startEvent id="start_sub_board"><outgoing>sf_sb1</outgoing></startEvent>
+
+      <task id="task_crm_kanban" name="Kanban доска&#10;(drag-and-drop задач&#10;по колонкам)">
+        <incoming>sf_sb1</incoming>
+        <outgoing>sf_sb2</outgoing>
+      </task>
+
+      <task id="task_crm_task_detail" name="Детали задачи&#10;(комментарии, вложения,&#10;assignee, due_date)">
+        <incoming>sf_sb2</incoming>
+        <outgoing>sf_sb_end</outgoing>
+      </task>
+
+      <endEvent id="end_sub_board"><incoming>sf_sb_end</incoming></endEvent>
+
+      <sequenceFlow id="sf_sb1" sourceRef="start_sub_board" targetRef="task_crm_kanban" />
+      <sequenceFlow id="sf_sb2" sourceRef="task_crm_kanban" targetRef="task_crm_task_detail" />
+      <sequenceFlow id="sf_sb_end" sourceRef="task_crm_task_detail" targetRef="end_sub_board" />
+    </subProcess>
+
+    <!-- Клиенты -->
+    <subProcess id="sub_clients" name="Клиенты&#10;profiles + contacts + companies + locations">
+      <incoming>sf_crm_clients</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+
+      <startEvent id="start_sub_clients"><outgoing>sf_sc1</outgoing></startEvent>
+
+      <task id="task_crm_clients_list" name="Список клиентов&#10;(contacts: 2098)">
+        <incoming>sf_sc1</incoming>
+        <outgoing>sf_sc2</outgoing>
+      </task>
+
+      <task id="task_crm_companies" name="Компании&#10;(companies: 154)&#10;Сегмент: horeca/office/&#10;wholesale/pharmacy/shop">
+        <incoming>sf_sc2</incoming>
+        <outgoing>sf_sc3</outgoing>
+      </task>
+
+      <task id="task_crm_locations" name="Точки доставки&#10;(locations: 9)&#10;owner → company">
+        <incoming>sf_sc3</incoming>
+        <outgoing>sf_sc_end</outgoing>
+      </task>
+
+      <endEvent id="end_sub_clients"><incoming>sf_sc_end</incoming></endEvent>
+
+      <sequenceFlow id="sf_sc1" sourceRef="start_sub_clients" targetRef="task_crm_clients_list" />
+      <sequenceFlow id="sf_sc2" sourceRef="task_crm_clients_list" targetRef="task_crm_companies" />
+      <sequenceFlow id="sf_sc3" sourceRef="task_crm_companies" targetRef="task_crm_locations" />
+      <sequenceFlow id="sf_sc_end" sourceRef="task_crm_locations" targetRef="end_sub_clients" />
+    </subProcess>
+
+    <!-- Логистика -->
+    <subProcess id="sub_logistics" name="Логистика&#10;Маршруты курьеров">
+      <incoming>sf_crm_logistics</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+
+      <startEvent id="start_sub_log"><outgoing>sf_sl1</outgoing></startEvent>
+
+      <task id="task_crm_routes" name="Маршруты курьеров&#10;(список остановок,&#10;статусы: done/going/waiting)">
+        <incoming>sf_sl1</incoming>
+        <outgoing>sf_sl2</outgoing>
+      </task>
+
+      <task id="task_crm_map" name="Карта маршрута&#10;(пройдено / осталось)">
+        <incoming>sf_sl2</incoming>
+        <outgoing>sf_sl_end</outgoing>
+      </task>
+
+      <endEvent id="end_sub_log"><incoming>sf_sl_end</incoming></endEvent>
+
+      <sequenceFlow id="sf_sl1" sourceRef="start_sub_log" targetRef="task_crm_routes" />
+      <sequenceFlow id="sf_sl2" sourceRef="task_crm_routes" targetRef="task_crm_map" />
+      <sequenceFlow id="sf_sl_end" sourceRef="task_crm_map" targetRef="end_sub_log" />
+    </subProcess>
+
+    <!-- WhatsApp CRM -->
+    <task id="task_crm_send_wa" name="WhatsApp чат&#10;(wa_conversations + wa_messages)&#10;Отправить сообщение клиенту">
+      <incoming>sf_crm_wa</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+    </task>
+
+    <!-- Контент -->
+    <task id="task_crm_content_edit" name="Редактор контента&#10;site_content: banner/promo/&#10;quick_action/advantage/review&#10;page_blocks: JSONB">
+      <incoming>sf_crm_content</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+    </task>
+
+    <!-- Роли -->
+    <task id="task_crm_roles" name="Роли и доступ&#10;profiles.role: admin/manager/&#10;logist/client&#10;Матрица прав 10×4">
+      <incoming>sf_crm_roles</incoming>
+      <outgoing>sf_crm_merge</outgoing>
+    </task>
+
+    <!-- Merge gateway -->
+    <exclusiveGateway id="gw_crm_merge" name="Назад в дашборд">
+      <incoming>sf_crm_merge</incoming>
+      <outgoing>sf_crm_back</outgoing>
+    </exclusiveGateway>
+
+    <endEvent id="end_crm" name="Сессия завершена">
+      <incoming>sf_crm_back</incoming>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="sf_crm1" sourceRef="start_crm" targetRef="task_crm_dash" />
+    <sequenceFlow id="sf_crm2" sourceRef="task_crm_dash" targetRef="gw_crm_tab" />
+    <sequenceFlow id="sf_crm_orders" sourceRef="gw_crm_tab" targetRef="sub_orders" name="Заявки" />
+    <sequenceFlow id="sf_crm_board" sourceRef="gw_crm_tab" targetRef="sub_board" name="Доска" />
+    <sequenceFlow id="sf_crm_clients" sourceRef="gw_crm_tab" targetRef="sub_clients" name="Клиенты" />
+    <sequenceFlow id="sf_crm_logistics" sourceRef="gw_crm_tab" targetRef="sub_logistics" name="Логистика" />
+    <sequenceFlow id="sf_crm_wa" sourceRef="gw_crm_tab" targetRef="task_crm_send_wa" name="WhatsApp" />
+    <sequenceFlow id="sf_crm_content" sourceRef="gw_crm_tab" targetRef="task_crm_content_edit" name="Контент" />
+    <sequenceFlow id="sf_crm_roles" sourceRef="gw_crm_tab" targetRef="task_crm_roles" name="Роли" />
+    <sequenceFlow id="sf_crm_merge" sourceRef="sub_orders" targetRef="gw_crm_merge" />
+    <sequenceFlow id="sf_crm_back" sourceRef="gw_crm_merge" targetRef="end_crm" />
+  </process>
+
+  <!-- ═══════════════════════════
+       PROCESS 3: EDGE FUNCTIONS
+       ═══════════════════════════ -->
+  <process id="proc_system" name="Система" isExecutable="false">
+
+    <startEvent id="start_sys" name="Входящий запрос">
+      <outgoing>sf_sys1</outgoing>
+    </startEvent>
+
+    <exclusiveGateway id="gw_sys_route" name="Маршрут">
+      <incoming>sf_sys1</incoming>
+      <outgoing>sf_sys_otp</outgoing>
+      <outgoing>sf_sys_verify</outgoing>
+      <outgoing>sf_sys_send</outgoing>
+      <outgoing>sf_sys_webhook</outgoing>
+    </exclusiveGateway>
+
+    <!-- OTP Send -->
+    <task id="task_ef_otp_send" name="whatsapp-otp&#10;(без JWT)&#10;1. Генерирует 6-цифр код&#10;2. Сохраняет в wa_otp&#10;3. Отправляет через WA API">
+      <incoming>sf_sys_otp</incoming>
+      <outgoing>sf_sys_otp_end</outgoing>
+    </task>
+
+    <!-- OTP Verify -->
+    <task id="task_ef_otp_verify" name="whatsapp-otp-verify&#10;(без JWT)&#10;1. Проверяет wa_otp&#10;2. Помечает used=true&#10;3. Создаёт/находит auth.user&#10;4. Возвращает session">
+      <incoming>sf_sys_verify</incoming>
+      <outgoing>sf_sys_verify_end</outgoing>
+    </task>
+
+    <!-- WA Send -->
+    <task id="task_ef_wa_send" name="whatsapp-send&#10;(с JWT)&#10;1. Проверяет роль менеджера&#10;2. Отправляет сообщение&#10;3. Сохраняет в wa_messages">
+      <incoming>sf_sys_send</incoming>
+      <outgoing>sf_sys_send_end</outgoing>
+    </task>
+
+    <!-- WA Webhook -->
+    <task id="task_ef_webhook" name="whatsapp-webhook&#10;(без JWT)&#10;1. Принимает events от WA&#10;2. Upsert wa_conversations&#10;3. Insert wa_messages&#10;4. Обновляет unread_count">
+      <incoming>sf_sys_webhook</incoming>
+      <outgoing>sf_sys_webhook_end</outgoing>
+    </task>
+
+    <!-- DB Operations -->
+    <subProcess id="sub_db" name="Supabase PostgreSQL 17&#10;(RLS на всех таблицах)">
+      <incoming>sf_sys_otp_end</incoming>
+      <incoming>sf_sys_verify_end</incoming>
+      <incoming>sf_sys_send_end</incoming>
+      <incoming>sf_sys_webhook_end</incoming>
+      <outgoing>sf_sys_db_end</outgoing>
+
+      <startEvent id="start_db"><outgoing>sf_db1</outgoing></startEvent>
+
+      <parallelGateway id="gw_db_tables" name="Таблицы БД">
+        <incoming>sf_db1</incoming>
+        <outgoing>sf_db_profiles</outgoing>
+        <outgoing>sf_db_crm</outgoing>
+        <outgoing>sf_db_wa</outgoing>
+        <outgoing>sf_db_catalog</outgoing>
+        <outgoing>sf_db_content</outgoing>
+      </parallelGateway>
+
+      <task id="task_db_profiles" name="Пользователи&#10;profiles (9)&#10;contracts (2)&#10;discounts (0)&#10;invites (4)&#10;kpi_goals (2)">
+        <incoming>sf_db_profiles</incoming>
+        <outgoing>sf_db_merge</outgoing>
+      </task>
+
+      <task id="task_db_crm" name="CRM&#10;companies (154)&#10;contacts (2098)&#10;locations (9)&#10;crm_projects (3)&#10;crm_columns (10)&#10;crm_tasks (17)&#10;crm_task_comments (4)">
+        <incoming>sf_db_crm</incoming>
+        <outgoing>sf_db_merge</outgoing>
+      </task>
+
+      <task id="task_db_wa" name="WhatsApp&#10;wa_conversations (1)&#10;wa_messages (5)&#10;wa_otp (2)">
+        <incoming>sf_db_wa</incoming>
+        <outgoing>sf_db_merge</outgoing>
+      </task>
+
+      <task id="task_db_catalog" name="Каталог&#10;products (1229 SKU)&#10;(price, price_tp, stock,&#10;onec_ref, section)">
+        <incoming>sf_db_catalog</incoming>
+        <outgoing>sf_db_merge</outgoing>
+      </task>
+
+      <task id="task_db_content" name="Контент&#10;site_content (13)&#10;page_blocks (9 JSONB)">
+        <incoming>sf_db_content</incoming>
+        <outgoing>sf_db_merge</outgoing>
+      </task>
+
+      <parallelGateway id="gw_db_merge" name="Merge">
+        <incoming>sf_db_merge</incoming>
+        <outgoing>sf_db_end</outgoing>
+      </parallelGateway>
+
+      <endEvent id="end_db"><incoming>sf_db_end</incoming></endEvent>
+
+      <sequenceFlow id="sf_db1" sourceRef="start_db" targetRef="gw_db_tables" />
+      <sequenceFlow id="sf_db_profiles" sourceRef="gw_db_tables" targetRef="task_db_profiles" />
+      <sequenceFlow id="sf_db_crm" sourceRef="gw_db_tables" targetRef="task_db_crm" />
+      <sequenceFlow id="sf_db_wa" sourceRef="gw_db_tables" targetRef="task_db_wa" />
+      <sequenceFlow id="sf_db_catalog" sourceRef="gw_db_tables" targetRef="task_db_catalog" />
+      <sequenceFlow id="sf_db_content" sourceRef="gw_db_tables" targetRef="task_db_content" />
+      <sequenceFlow id="sf_db_merge" sourceRef="task_db_profiles" targetRef="gw_db_merge" />
+      <sequenceFlow id="sf_db_end" sourceRef="gw_db_merge" targetRef="end_db" />
+    </subProcess>
+
+    <!-- Save order event -->
+    <task id="task_sys_save_order" name="Сохранить заявку&#10;INSERT crm_tasks&#10;(task_type=order)">
+      <outgoing>sf_sys_order_saved</outgoing>
+    </task>
+
+    <intermediateCatchEvent id="event_order_created" name="Заявка создана">
+      <incoming>sf_sys_order_saved</incoming>
+      <outgoing>sf_sys_end</outgoing>
+      <messageEventDefinition />
+    </intermediateCatchEvent>
+
+    <endEvent id="end_sys" name="Ответ отправлен">
+      <incoming>sf_sys_db_end</incoming>
+      <incoming>sf_sys_end</incoming>
+    </endEvent>
+
+    <sequenceFlow id="sf_sys1" sourceRef="start_sys" targetRef="gw_sys_route" />
+    <sequenceFlow id="sf_sys_otp" sourceRef="gw_sys_route" targetRef="task_ef_otp_send" name="POST /whatsapp-otp" />
+    <sequenceFlow id="sf_sys_verify" sourceRef="gw_sys_route" targetRef="task_ef_otp_verify" name="POST /whatsapp-otp-verify" />
+    <sequenceFlow id="sf_sys_send" sourceRef="gw_sys_route" targetRef="task_ef_wa_send" name="POST /whatsapp-send" />
+    <sequenceFlow id="sf_sys_webhook" sourceRef="gw_sys_route" targetRef="task_ef_webhook" name="POST /whatsapp-webhook" />
+    <sequenceFlow id="sf_sys_otp_end" sourceRef="task_ef_otp_send" targetRef="sub_db" />
+    <sequenceFlow id="sf_sys_verify_end" sourceRef="task_ef_otp_verify" targetRef="sub_db" />
+    <sequenceFlow id="sf_sys_send_end" sourceRef="task_ef_wa_send" targetRef="sub_db" />
+    <sequenceFlow id="sf_sys_webhook_end" sourceRef="task_ef_webhook" targetRef="sub_db" />
+    <sequenceFlow id="sf_sys_db_end" sourceRef="sub_db" targetRef="end_sys" />
+    <sequenceFlow id="sf_sys_order_saved" sourceRef="task_sys_save_order" targetRef="event_order_created" />
+    <sequenceFlow id="sf_sys_end" sourceRef="event_order_created" targetRef="end_sys" />
+  </process>
+
+  <!-- ═══════════════════════════
+       PROCESS 4: WHATSAPP API
+       ═══════════════════════════ -->
+  <process id="proc_wa" name="WhatsApp Business API" isExecutable="false">
+
+    <startEvent id="start_wa" name="WhatsApp Business API">
+      <outgoing>sf_wa1</outgoing>
+    </startEvent>
+
+    <parallelGateway id="gw_wa_split" name="Направления">
+      <incoming>sf_wa1</incoming>
+      <outgoing>sf_wa_in</outgoing>
+      <outgoing>sf_wa_out</outgoing>
+    </parallelGateway>
+
+    <task id="task_wa_incoming" name="Входящее сообщение&#10;от клиента">
+      <incoming>sf_wa_in</incoming>
+      <outgoing>sf_wa_in_end</outgoing>
+    </task>
+
+    <task id="task_wa_deliver" name="Доставка исходящего&#10;сообщения клиенту">
+      <incoming>sf_wa_out</incoming>
+      <outgoing>sf_wa_out_end</outgoing>
+    </task>
+
+    <parallelGateway id="gw_wa_merge">
+      <incoming>sf_wa_in_end</incoming>
+      <incoming>sf_wa_out_end</incoming>
+      <outgoing>sf_wa_end</outgoing>
+    </parallelGateway>
+
+    <endEvent id="end_wa"><incoming>sf_wa_end</incoming></endEvent>
+
+    <sequenceFlow id="sf_wa1" sourceRef="start_wa" targetRef="gw_wa_split" />
+    <sequenceFlow id="sf_wa_in" sourceRef="gw_wa_split" targetRef="task_wa_incoming" />
+    <sequenceFlow id="sf_wa_out" sourceRef="gw_wa_split" targetRef="task_wa_deliver" />
+    <sequenceFlow id="sf_wa_in_end" sourceRef="task_wa_incoming" targetRef="gw_wa_merge" />
+    <sequenceFlow id="sf_wa_out_end" sourceRef="task_wa_deliver" targetRef="gw_wa_merge" />
+    <sequenceFlow id="sf_wa_end" sourceRef="gw_wa_merge" targetRef="end_wa" />
+  </process>
+
+  <!-- ═══════════════════════════
+       ДИАГРАММА (DI)
+       ═══════════════════════════ -->
+  <bpmndi:BPMNDiagram id="diagram">
+    <bpmndi:BPMNPlane id="plane" bpmnElement="NstoreCollaboration">
+
+      <!-- POOL: Клиент -->
+      <bpmndi:BPMNShape id="shape_pool_client" bpmnElement="pool_client" isHorizontal="true">
+        <dc:Bounds x="30" y="30" width="1400" height="200" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_start_client" bpmnElement="start_client">
+        <dc:Bounds x="80" y="105" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_gw_client_auth" bpmnElement="gw_client_auth" isMarkerVisible="true">
+        <dc:Bounds x="170" y="98" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_request_otp" bpmnElement="task_client_request_otp">
+        <dc:Bounds x="280" y="85" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_event_wa_otp_received" bpmnElement="event_wa_otp_received">
+        <dc:Bounds x="476" y="105" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_verify_otp" bpmnElement="task_client_verify_otp">
+        <dc:Bounds x="560" y="85" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_event_client_logged_in" bpmnElement="event_client_logged_in">
+        <dc:Bounds x="756" y="105" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_cabinet" bpmnElement="task_client_cabinet">
+        <dc:Bounds x="840" y="85" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_catalog" bpmnElement="task_client_catalog">
+        <dc:Bounds x="1030" y="85" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_order" bpmnElement="task_client_order">
+        <dc:Bounds x="1220" y="85" width="120" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_client_track" bpmnElement="task_client_track">
+        <dc:Bounds x="1390" y="85" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_end_client" bpmnElement="end_client">
+        <dc:Bounds x="1582" y="105" width="36" height="36" />
+      </bpmndi:BPMNShape>
+
+      <!-- POOL: CRM -->
+      <bpmndi:BPMNShape id="shape_pool_manager" bpmnElement="pool_manager" isHorizontal="true">
+        <dc:Bounds x="30" y="260" width="1400" height="280" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_start_crm" bpmnElement="start_crm">
+        <dc:Bounds x="80" y="385" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_crm_dash" bpmnElement="task_crm_dash">
+        <dc:Bounds x="160" y="370" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_gw_crm_tab" bpmnElement="gw_crm_tab" isMarkerVisible="true">
+        <dc:Bounds x="350" y="378" width="50" height="50" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_sub_orders" bpmnElement="sub_orders" isExpanded="true">
+        <dc:Bounds x="450" y="270" width="300" height="120" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_sub_board" bpmnElement="sub_board" isExpanded="false">
+        <dc:Bounds x="450" y="395" width="160" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_sub_clients" bpmnElement="sub_clients" isExpanded="false">
+        <dc:Bounds x="630" y="395" width="160" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_sub_logistics" bpmnElement="sub_logistics" isExpanded="false">
+        <dc:Bounds x="810" y="395" width="160" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_crm_send_wa" bpmnElement="task_crm_send_wa">
+        <dc:Bounds x="990" y="370" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_crm_content_edit" bpmnElement="task_crm_content_edit">
+        <dc:Bounds x="1150" y="370" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_crm_roles" bpmnElement="task_crm_roles">
+        <dc:Bounds x="1310" y="370" width="140" height="60" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_gw_crm_merge" bpmnElement="gw_crm_merge" isMarkerVisible="true">
+        <dc:Bounds x="1490" y="378" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_end_crm" bpmnElement="end_crm">
+        <dc:Bounds x="1582" y="385" width="36" height="36" />
+      </bpmndi:BPMNShape>
+
+      <!-- POOL: СИСТЕМА -->
+      <bpmndi:BPMNShape id="shape_pool_system" bpmnElement="pool_system" isHorizontal="true">
+        <dc:Bounds x="30" y="570" width="1400" height="320" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_start_sys" bpmnElement="start_sys">
+        <dc:Bounds x="80" y="715" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_gw_sys_route" bpmnElement="gw_sys_route" isMarkerVisible="true">
+        <dc:Bounds x="170" y="708" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_ef_otp_send" bpmnElement="task_ef_otp_send">
+        <dc:Bounds x="280" y="580" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_ef_otp_verify" bpmnElement="task_ef_otp_verify">
+        <dc:Bounds x="280" y="680" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_ef_wa_send" bpmnElement="task_ef_wa_send">
+        <dc:Bounds x="280" y="780" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_ef_webhook" bpmnElement="task_ef_webhook">
+        <dc:Bounds x="280" y="840" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_sub_db" bpmnElement="sub_db" isExpanded="false">
+        <dc:Bounds x="520" y="700" width="200" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_sys_save_order" bpmnElement="task_sys_save_order">
+        <dc:Bounds x="780" y="700" width="160" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_event_order_created" bpmnElement="event_order_created">
+        <dc:Bounds x="996" y="715" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_end_sys" bpmnElement="end_sys">
+        <dc:Bounds x="1090" y="715" width="36" height="36" />
+      </bpmndi:BPMNShape>
+
+      <!-- POOL: WhatsApp -->
+      <bpmndi:BPMNShape id="shape_pool_wa" bpmnElement="pool_whatsapp" isHorizontal="true">
+        <dc:Bounds x="30" y="920" width="1400" height="150" />
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="shape_start_wa" bpmnElement="start_wa">
+        <dc:Bounds x="80" y="978" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_gw_wa_split" bpmnElement="gw_wa_split">
+        <dc:Bounds x="170" y="971" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_wa_incoming" bpmnElement="task_wa_incoming">
+        <dc:Bounds x="280" y="940" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_task_wa_deliver" bpmnElement="task_wa_deliver">
+        <dc:Bounds x="280" y="1010" width="140" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_gw_wa_merge" bpmnElement="gw_wa_merge">
+        <dc:Bounds x="480" y="971" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_end_wa" bpmnElement="end_wa">
+        <dc:Bounds x="582" y="978" width="36" height="36" />
+      </bpmndi:BPMNShape>
+
+      <!-- ═══ SEQUENCE FLOW EDGES ═══ -->
+
+      <!-- Клиент -->
+      <bpmndi:BPMNEdge id="edge_sf_c1" bpmnElement="sf_c1"><di:waypoint x="116" y="123" /><di:waypoint x="170" y="123" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c2" bpmnElement="sf_c2"><di:waypoint x="220" y="123" /><di:waypoint x="280" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c3" bpmnElement="sf_c3"><di:waypoint x="220" y="123" /><di:waypoint x="840" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c4" bpmnElement="sf_c4"><di:waypoint x="420" y="115" /><di:waypoint x="476" y="123" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c5" bpmnElement="sf_c5"><di:waypoint x="512" y="123" /><di:waypoint x="560" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c6" bpmnElement="sf_c6"><di:waypoint x="700" y="115" /><di:waypoint x="756" y="123" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c7" bpmnElement="sf_c7"><di:waypoint x="792" y="123" /><di:waypoint x="840" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c8" bpmnElement="sf_c8"><di:waypoint x="980" y="115" /><di:waypoint x="1030" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c9" bpmnElement="sf_c9"><di:waypoint x="1170" y="115" /><di:waypoint x="1220" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c10" bpmnElement="sf_c10"><di:waypoint x="1340" y="115" /><di:waypoint x="1390" y="115" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_c_end" bpmnElement="sf_c_end"><di:waypoint x="1530" y="115" /><di:waypoint x="1582" y="123" /></bpmndi:BPMNEdge>
+
+      <!-- CRM -->
+      <bpmndi:BPMNEdge id="edge_sf_crm1" bpmnElement="sf_crm1"><di:waypoint x="116" y="403" /><di:waypoint x="160" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm2" bpmnElement="sf_crm2"><di:waypoint x="300" y="400" /><di:waypoint x="350" y="403" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_orders" bpmnElement="sf_crm_orders"><di:waypoint x="400" y="378" /><di:waypoint x="450" y="330" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_board" bpmnElement="sf_crm_board"><di:waypoint x="400" y="403" /><di:waypoint x="450" y="425" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_clients" bpmnElement="sf_crm_clients"><di:waypoint x="400" y="403" /><di:waypoint x="630" y="425" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_logistics" bpmnElement="sf_crm_logistics"><di:waypoint x="400" y="403" /><di:waypoint x="810" y="425" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_wa" bpmnElement="sf_crm_wa"><di:waypoint x="400" y="403" /><di:waypoint x="990" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_content" bpmnElement="sf_crm_content"><di:waypoint x="400" y="403" /><di:waypoint x="1150" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_roles" bpmnElement="sf_crm_roles"><di:waypoint x="400" y="403" /><di:waypoint x="1310" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_merge" bpmnElement="sf_crm_merge"><di:waypoint x="750" y="330" /><di:waypoint x="1490" y="403" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_crm_back" bpmnElement="sf_crm_back"><di:waypoint x="1540" y="403" /><di:waypoint x="1582" y="403" /></bpmndi:BPMNEdge>
+
+      <!-- Система -->
+      <bpmndi:BPMNEdge id="edge_sf_sys1" bpmnElement="sf_sys1"><di:waypoint x="116" y="733" /><di:waypoint x="170" y="733" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_otp" bpmnElement="sf_sys_otp"><di:waypoint x="195" y="708" /><di:waypoint x="280" y="620" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_verify" bpmnElement="sf_sys_verify"><di:waypoint x="195" y="720" /><di:waypoint x="280" y="720" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_send" bpmnElement="sf_sys_send"><di:waypoint x="195" y="745" /><di:waypoint x="280" y="820" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_webhook" bpmnElement="sf_sys_webhook"><di:waypoint x="195" y="758" /><di:waypoint x="280" y="880" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_otp_end" bpmnElement="sf_sys_otp_end"><di:waypoint x="440" y="620" /><di:waypoint x="520" y="730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_verify_end" bpmnElement="sf_sys_verify_end"><di:waypoint x="440" y="720" /><di:waypoint x="520" y="730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_send_end" bpmnElement="sf_sys_send_end"><di:waypoint x="440" y="820" /><di:waypoint x="520" y="730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_webhook_end" bpmnElement="sf_sys_webhook_end"><di:waypoint x="440" y="880" /><di:waypoint x="520" y="730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_db_end" bpmnElement="sf_sys_db_end"><di:waypoint x="720" y="730" /><di:waypoint x="1090" y="733" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_order_saved" bpmnElement="sf_sys_order_saved"><di:waypoint x="940" y="730" /><di:waypoint x="996" y="733" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_sys_end" bpmnElement="sf_sys_end"><di:waypoint x="1032" y="733" /><di:waypoint x="1090" y="733" /></bpmndi:BPMNEdge>
+
+      <!-- WhatsApp -->
+      <bpmndi:BPMNEdge id="edge_sf_wa1" bpmnElement="sf_wa1"><di:waypoint x="116" y="996" /><di:waypoint x="170" y="996" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_wa_in" bpmnElement="sf_wa_in"><di:waypoint x="195" y="971" /><di:waypoint x="280" y="970" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_wa_out" bpmnElement="sf_wa_out"><di:waypoint x="195" y="1021" /><di:waypoint x="280" y="1040" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_wa_in_end" bpmnElement="sf_wa_in_end"><di:waypoint x="420" y="970" /><di:waypoint x="480" y="996" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_wa_out_end" bpmnElement="sf_wa_out_end"><di:waypoint x="420" y="1040" /><di:waypoint x="480" y="996" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_sf_wa_end" bpmnElement="sf_wa_end"><di:waypoint x="530" y="996" /><di:waypoint x="582" y="996" /></bpmndi:BPMNEdge>
+
+      <!-- MESSAGE FLOWS (пунктир между пулами) -->
+      <bpmndi:BPMNEdge id="edge_mf1" bpmnElement="mf1"><di:waypoint x="350" y="145" /><di:waypoint x="350" y="620" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf2" bpmnElement="mf2"><di:waypoint x="360" y="660" /><di:waypoint x="360" y="1000" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf3" bpmnElement="mf3"><di:waypoint x="630" y="145" /><di:waypoint x="630" y="680" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf4" bpmnElement="mf4"><di:waypoint x="460" y="760" /><di:waypoint x="792" y="123" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf5" bpmnElement="mf5"><di:waypoint x="350" y="970" /><di:waypoint x="350" y="920" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf6" bpmnElement="mf6"><di:waypoint x="1060" y="430" /><di:waypoint x="1060" y="820" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf7" bpmnElement="mf7"><di:waypoint x="380" y="820" /><di:waypoint x="380" y="1010" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf8" bpmnElement="mf8"><di:waypoint x="1280" y="145" /><di:waypoint x="860" y="700" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_mf9" bpmnElement="mf9"><di:waypoint x="1032" y="733" /><di:waypoint x="1340" y="115" /></bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

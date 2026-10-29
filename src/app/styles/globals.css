@@ -1,0 +1,355 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CRM CSS Variables ── */
+:root {
+  --color-primary: #10A35B;
+  --color-primary-dark: #0E7C46;
+  --color-primary-light: #EAF6EE;
+  --color-accent: #7C3AED;
+  --color-accent-dark: #5B21D6;
+  --color-accent-light: #F4EEFE;
+  --color-bg: #EEF1F0;
+  --color-bg-card: #ffffff;
+  --color-sidebar: #0C1A13;
+  --color-sidebar-text: #A9C0B2;
+  --color-border: #EDF1EF;
+  --color-border-strong: #E4E9E6;
+  --color-text: #12201A;
+  --color-text-secondary: #5C6B63;
+  --color-text-muted: #8A968E;
+  --font-display: 'Unbounded', sans-serif;
+  --font-body: 'Onest', system-ui, sans-serif;
+
+  /* Legacy aliases kept for compatibility */
+  --primary: #10A35B;
+  --primary2: #0E7C46;
+  --red: #DC2626;
+  --blue: #2563EB;
+  --teal: #0891B2;
+  --ora: #D97706;
+  --pur: #7C3AED;
+  --green: #16A34A;
+
+  --bg:  #EEF1F0;
+  --bg2: #FFFFFF;
+  --bg3: #F2F5F3;
+  --bg4: #EAF6EE;
+
+  --bd:  #EDF1EF;
+  --bd2: #E4E9E6;
+
+  --t:  #12201A;
+  --t2: #5C6B63;
+  --t3: #8A968E;
+
+  --fl:  rgba(16,163,91,.05);
+  --fl2: rgba(16,163,91,.03);
+
+  --r:  11px;
+  --r2: 16px;
+  --shadow: 0 4px 16px -8px rgba(16,40,28,.12);
+}
+
+html.dark {
+  --primary: #34B97C;
+  --primary2: #2A9663;
+  --red: #EF4444;
+  --blue: #3B82F6;
+  --teal: #38BDF8;
+  --ora: #F59E0B;
+  --pur: #8B5CF6;
+  --green: #22C55E;
+
+  --bg:  #0D0F14;
+  --bg2: #161A24;
+  --bg3: #1E2333;
+  --bg4: #262D40;
+
+  --bd:  rgba(255,255,255,.09);
+  --bd2: rgba(255,255,255,.16);
+
+  --t:  #EEF0F6;
+  --t2: rgba(238,240,246,.62);
+  --t3: rgba(238,240,246,.32);
+
+  --fl:  rgba(255,255,255,.07);
+  --fl2: rgba(255,255,255,.04);
+
+  --shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Onest', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--t);
+}
+
+/* ── Animations ── */
+@keyframes spin { to { transform: rotate(360deg) } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(6px) } to { opacity:1; transform:translateY(0) } }
+@keyframes livePulse { 0%,100% { opacity:1 } 50% { opacity:.35 } }
+
+/* ── CRM reusable classes ── */
+@layer components {
+  .crm-btn-primary {
+    background: #10A35B;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .crm-btn-primary:hover { background: #0E7C46; }
+
+  .crm-btn {
+    background: #F2F5F3;
+    color: #1C2A22;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .crm-btn:hover { background: #E4E9E6; }
+
+  .crm-card {
+    background: #fff;
+    border: 1px solid #EDF1EF;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 16px -8px rgba(16,40,28,.12);
+  }
+
+  .crm-input {
+    border: 1px solid #D4DAD6;
+    border-radius: 11px;
+    height: 46px;
+    padding: 0 14px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+  }
+  .crm-input:focus {
+    border-color: #10A35B;
+    box-shadow: 0 0 0 3px rgba(16,163,91,.12);
+  }
+
+  .tab-placeholder {
+    @apply flex flex-col items-center justify-center gap-3 text-center;
+    color: var(--t3);
+    min-height: 300px;
+  }
+}
+
+/* ── Landing Page Responsive ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* overflow:clip (не hidden) — клиппинг скруглённых углов без создания scroll-контейнера,
+   иначе position:sticky у .lp-header не закрепляется к вьюпорту. */
+.lp-card { background:#fff; border-radius:24px; overflow:clip; box-shadow:0 24px 60px -28px rgba(16,40,28,.28); border:1px solid #E4E9E6; }
+
+.lp-header { position:sticky; top:0; z-index:30; background:#fff; display:flex; align-items:center; gap:20px; padding:18px 28px; padding-top:calc(18px + env(safe-area-inset-top, 0px)); border-bottom:1px solid #EDF1EF; flex-wrap:wrap; box-shadow:0 6px 20px -18px rgba(16,40,28,.5); }
+.lp-search { flex:1; min-width:160px; display:flex; align-items:center; gap:10px; background:#F2F5F3; border-radius:14px; padding:0 16px; height:48px; }
+
+.lp-chips { display:flex; gap:10px; padding:16px 28px; overflow-x:auto; border-bottom:1px solid #F2F5F3; scrollbar-width:none; }
+.lp-chips::-webkit-scrollbar { display:none; }
+
+.lp-promo-row { display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px; padding:22px 28px 8px; }
+
+.lp-product-grid { display:grid; grid-template-columns:repeat(var(--lp-cols,6),1fr); gap:14px; padding:0 28px 30px; }
+.lp-cat-grid    { display:grid; grid-template-columns:repeat(6,1fr); gap:14px; }
+.lp-trust-grid  { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.lp-footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:28px; }
+.lp-section-pad { padding:22px 28px 6px; }
+.lp-usp-hero    { padding:40px 36px; }
+.lp-stats-row   { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.lp-steps-row   { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+
+/* Tablet ≤1024px */
+@media (max-width:1024px) {
+  .lp-header { gap:12px; padding:14px 18px; padding-top:calc(14px + env(safe-area-inset-top, 0px)); }
+  .lp-promo-row { grid-template-columns:1fr 1fr; gap:12px; padding:16px 18px 6px; }
+  .lp-product-grid { grid-template-columns:repeat(3,1fr); gap:10px; padding:0 18px 20px; }
+  .lp-cat-grid    { grid-template-columns:repeat(3,1fr); }
+  .lp-trust-grid  { grid-template-columns:repeat(2,1fr); }
+  .lp-footer-grid { grid-template-columns:1fr 1fr; gap:20px; }
+  .lp-chips { padding:12px 18px; }
+  .lp-section-pad { padding:20px 18px 6px; }
+  .lp-usp-hero { padding:28px 24px; }
+}
+
+/* Mobile ≤640px */
+@media (max-width:640px) {
+  .lp-card { border-radius:0; }
+  .lp-header { gap:8px; padding:12px 14px; padding-top:calc(12px + env(safe-area-inset-top, 0px)); }
+  .lp-search { display:none; }
+  .lp-city-btn { display:none !important; } /* инлайн display:flex в Header иначе перебивает */
+  .lp-promo-row { grid-template-columns:1fr; gap:10px; padding:12px 14px 6px; }
+  .lp-product-grid { grid-template-columns:repeat(2,1fr); gap:8px; padding:0 14px 14px; }
+  .lp-cat-grid    { grid-template-columns:repeat(2,1fr); }
+  .lp-trust-grid  { grid-template-columns:1fr; }
+  .lp-footer-grid { grid-template-columns:1fr; gap:16px; }
+  .lp-chips { padding:10px 14px; }
+  .lp-section-pad { padding:16px 14px 6px; }
+  .lp-b2b-banner { flex-direction:column !important; }
+  .lp-outer { padding:0 0 40px !important; }
+  .lp-usp-hero { padding:22px 18px; gap:16px !important; }
+  .lp-stats-row { grid-template-columns:repeat(3,1fr); gap:8px; }
+  .lp-stats-row > div { padding:10px 8px !important; }
+  .lp-stats-row > div > div:first-child { font-size:18px !important; }
+  .lp-steps-row { grid-template-columns:1fr; gap:10px; }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   PWA / native-app polish
+   ════════════════════════════════════════════════════════════════ */
+
+/* Safe-area variables (notches, home indicator) */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* iOS rubber-band only inside scrollers, not the page */
+  overscroll-behavior-y: none;
+}
+
+/* Kill the grey tap flash, keep native feel */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Native-like press feedback on all interactive elements */
+@media (hover: none) {
+  button:active, [role="button"]:active, a:active {
+    transform: scale(0.95);
+    opacity: 0.82;
+    transition: transform 0.08s ease, opacity 0.08s ease;
+  }
+  /* Restore for elements that already have their own active states */
+  .tabbar a:active, .cab-tabbtn:active { transform: scale(0.92); opacity: 1; }
+}
+
+/* Disable long-press callout/selection on chrome, keep it for real content */
+body { -webkit-touch-callout: none; }
+input, textarea, [contenteditable], p, span, .selectable {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Inputs shouldn't zoom on iOS focus (needs >=16px) but keep look:
+   only enforce on small screens to avoid the auto-zoom jump.
+   !important overrides inline styles from React components. */
+@media (max-width: 768px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* Smooth momentum scrolling everywhere */
+* { -webkit-overflow-scrolling: touch; }
+
+/* Honour reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Helpers for safe-area padding */
+.safe-top    { padding-top: var(--sat); }
+.safe-bottom { padding-bottom: var(--sab); }
+
+/* GPU-accelerated, 60fps slide-up used by the install banner & sheets */
+@keyframes pwaSlideUp {
+  from { transform: translate3d(0, 24px, 0); opacity: 0; }
+  to   { transform: translate3d(0, 0, 0);   opacity: 1; }
+}
+@keyframes pwaSlideDown {
+  from { transform: translate3d(0, -100%, 0); opacity: 0; }
+  to   { transform: translate3d(0, 0, 0);     opacity: 1; }
+}
+
+/* ── Mobile bottom navigation (native tab bar) — in flow, never overlaps content ──
+   z-index ниже модалок (1000), чтобы открытые окна перекрывали панель и кнопки
+   «Сохранить» были доступны на мобильном. */
+.tabbar {
+  flex-shrink: 0; z-index: 100;
+  display: flex; align-items: stretch;
+  padding-bottom: var(--sab);
+  background: rgba(255,255,255,.88);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+html.dark .tabbar {
+  background: rgba(18,22,30,.86);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.tabbar a {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; padding: 8px 0 6px; text-decoration: none;
+  color: var(--t3); font-size: 10px; font-weight: 600;
+  transition: color .15s, transform .12s;
+  -webkit-user-select: none; user-select: none;
+}
+.tabbar a:active { transform: scale(.92); }
+.tabbar a.active { color: var(--primary); }
+.tabbar a svg { width: 23px; height: 23px; }
+.tabbar a span { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+
+/* ── Bottom sheet ("Ещё") ── */
+@keyframes sheetUp { from { transform: translate3d(0,100%,0); } to { transform: translate3d(0,0,0); } }
+@keyframes sheetFade { from { opacity: 0; } to { opacity: 1; } }
+.sheet-backdrop {
+  position: fixed; inset: 0; z-index: 1600; background: rgba(0,0,0,.4);
+  animation: sheetFade .2s ease;
+}
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1601;
+  background: var(--bg2); border-radius: 22px 22px 0 0;
+  padding: 8px 14px calc(var(--sab) + 14px);
+  box-shadow: 0 -12px 40px rgba(0,0,0,.22);
+  animation: sheetUp .3s cubic-bezier(.22,1,.36,1);
+  max-height: 82dvh; overflow-y: auto;
+}
+.sheet-grip { width: 38px; height: 4px; border-radius: 3px; background: var(--bd2); margin: 6px auto 12px; }
+/* Accessible text that remains available to search engines and screen readers. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

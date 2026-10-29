@@ -1,0 +1,32 @@
+{
+  "name": "Nstore — оптовый маркет",
+  "short_name": "Nstore",
+  "description": "B2B-платформа Nstore: каталог, заказы, CRM и кабинет клиента.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "lang": "ru",
+  "dir": "ltr",
+  "theme_color": "#10A35B",
+  "background_color": "#0C1A13",
+  "categories": ["business", "shopping", "productivity"],
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "launch_handler": { "client_mode": "navigate-existing" },
+  "screenshots": [
+    { "src": "/screenshots/screen-cabinet.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "Кабинет клиента" },
+    { "src": "/screenshots/screen-crm.png",     "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "CRM — доска заявок" }
+  ],
+  "shortcuts": [
+    { "name": "Кабинет клиента", "short_name": "Кабинет", "url": "/cabinet", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Дашборд", "short_name": "Дашборд", "url": "/crm/dash", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Доска заявок", "short_name": "Доска", "url": "/crm/board", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

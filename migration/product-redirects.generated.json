@@ -1,0 +1,3522 @@
+[
+  {
+    "source": "/product/aroy-d-100-kokosovoe-maslo-extra-virgin-180-ml",
+    "destination": "/product/aroy-d-100-kokosovoe-maslo-extra-virgin-180-ml-4514",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-bumaga-risovaya-22-sm-454-gr",
+    "destination": "/product/aroy-d-bumaga-risovaya-22-sm-454-gr-5155",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovoe-moloko-1l",
+    "destination": "/product/aroy-d-kokosovoe-moloko-1l-2520",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovoe-moloko-250-ml-2",
+    "destination": "/product/aroy-d-kokosovoe-moloko-250ml-4338",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovoe-moloko-400-ml",
+    "destination": "/product/aroy-d-kokosovoe-moloko-400-ml-2424",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovoe-moloko-500-ml",
+    "destination": "/product/aroy-d-kokosovoe-moloko-500-ml-2626",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovye-slivki-560-ml",
+    "destination": "/product/aroy-d-kokosovye-slivki-560-ml-2607",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-pasta-karri-krasnaya-400-ml",
+    "destination": "/product/aroy-d-pasta-karri-krasnaya-400-ml-4142",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-pasta-tom-yam-400-gr",
+    "destination": "/product/aroy-d-pasta-tom-yam-400-gr-4343",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-risovaya-lapsha-1-mm",
+    "destination": "/product/aroy-d-risovaya-lapsha-1-mm-4917",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-risovaya-lapsha-3-mm",
+    "destination": "/product/aroy-d-risovaya-lapsha-3-mm-4918",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-risovaya-lapsha-5-mm",
+    "destination": "/product/aroy-d-risovaya-lapsha-5-mm-4919",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-rybnyy-sous-700-ml",
+    "destination": "/product/aroy-d-rybnyy-sous-700-ml-2523",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-pad-tay-270-gr",
+    "destination": "/product/aroy-d-sous-pad-tay-270-gr-5157",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-sladkiy-chili-dlya-kuritsy-550-gr",
+    "destination": "/product/aroy-d-sous-sladkiy-chili-dlya-kuritsy-550-gr-4447",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-sriracha-510-gr",
+    "destination": "/product/aroy-d-sous-shriracha-510-gr-4341",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-sriracha-850-gr",
+    "destination": "/product/aroy-d-sous-sriracha-850-gr-4342",
+    "permanent": true
+  },
+  {
+    "source": "/product/arvid-nordquist-classic-mellan-molotyy-500-gr",
+    "destination": "/product/arvid-nordquist-classic-mellan-molotyy-500-gr-5242",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-zelenyy-chay-cream-fantacy-100-gr",
+    "destination": "/product/basilur-cream-fantasy-100-g-1538",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-zelenyy-chay-moroccan-mint-karton-100-gr",
+    "destination": "/product/basilur-moroccan-mint-100-g-1622",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-zelenyy-chay-kitayskaya-kollektsiya-tie-guan-yin-100-gr",
+    "destination": "/product/basilur-tie-guan-yin-100-g-4231",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-zelenyy-chay-kitayskaya-kollektsiya-white-tea-100-gr",
+    "destination": "/product/basilur-white-tea-zelenyy-listovoy-100-g-4230",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-kitayskaya-kollektsiya-milk-oolong-100-gr",
+    "destination": "/product/basilur-milk-oolong-100-g-4234",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-kitayskaya-kollektsiya-pu-erh-tea-100-gr",
+    "destination": "/product/basilur-pu-erh-100-g-4233",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-autumn-tea-100-gr",
+    "destination": "/product/basilur-autumn-tea-100-g-1571",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-earl-grey-100-gr",
+    "destination": "/product/basilur-earl-grey-100-g-1646",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-english-breakfast-100-gr",
+    "destination": "/product/basilur-english-breakfast-100-g-1643",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-frosty-day-100-gr",
+    "destination": "/product/basilur-frosty-day-100-g-1668",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-frosty-evening-100-gr",
+    "destination": "/product/basilur-frosty-evening-100-g-1669",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-frosty-morning-100-gr",
+    "destination": "/product/basilur-chernyy-chay-frosty-morning-100-gr-4238",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-frosty-night-100-gr",
+    "destination": "/product/basilur-frosty-night-100-g-1670",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-gold-100-gr",
+    "destination": "/product/basilur-gold-100-g-1584",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-golden-crescent-100-gr",
+    "destination": "/product/basilur-golden-crescent-100-g-1577",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-high-grown-100-gr",
+    "destination": "/product/basilur-high-grown-100-g-zh-b-1596",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-platinum-100-gr",
+    "destination": "/product/basilur-platinum-100-g-1595",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-uva-100-gr",
+    "destination": "/product/basilur-uva-100-g-1533",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-chernyy-chay-vishnya-i-chereshnya-zhest-100-gr",
+    "destination": "/product/basilur-sweet-cherry-100-g-4190",
+    "permanent": true
+  },
+  {
+    "source": "/product/berton-molochnyy-oolong-20-paketikov",
+    "destination": "/product/berton-molochnyy-oolong-20-paketikov-4535",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-brikka-geyzernaya-kofevarka-na-2-portsii",
+    "destination": "/product/bialetti-brikka-geyzernaya-kofevarka-na-2-portsii-4457",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-moka-express-geyzernaya-kofevarka-na-2-portsii",
+    "destination": "/product/bialetti-moka-exspress-geyzernaya-kofevarka-na-2-portsii-1404",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-moka-express-geyzernaya-kofevarka-na-3-portsii",
+    "destination": "/product/bialetti-moka-express-geyzernaya-kofevarka-na-3-portsii-1315",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-moka-express-geyzernaya-kofevarka-na-4-portsii",
+    "destination": "/product/bialetti-moka-express-geyzernaya-kofevarka-na-4-portsii-1314",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-moka-express-krasnaya-geyzernaya-kofevarka-na-3-portsii",
+    "destination": "/product/bialetti-moka-express-krasnaya-geyzernaya-kofevarka-na-3-portsii-4564",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-remkomplekt-dlya-kofevarok-na-3-4-portsii",
+    "destination": "/product/bialetti-remkomplekt-dlya-kofevarok-na-3-4portsii-1921",
+    "permanent": true
+  },
+  {
+    "source": "/product/bialetti-remkomplekt-dlya-kofevarok-na-6-portsiy",
+    "destination": "/product/bialetti-remkomplekt-dlya-kofevarok-na-6-portsiy-1922",
+    "permanent": true
+  },
+  {
+    "source": "/product/bilinska-kyselka-lechebnaya-mineralnaya-voda-1-l",
+    "destination": "/product/bilinska-kiselka-lechebnaya-mineralnaya-voda-1l-5574",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-black-katana-rastvorimyy-100-gr",
+    "destination": "/product/bushido-black-katana-rastvorimyy-100-gr-0118",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-original-rastvorimyy-100-gr",
+    "destination": "/product/bushido-original-rastvorimyy-100-gr-0145",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-red-katana-zerno-1000-gr",
+    "destination": "/product/bushido-red-katana-zerno-1000-gr-4896",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-red-katana-zerno-227-gr",
+    "destination": "/product/bushido-red-katana-zerno-227-gr-5283",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-red-katana-rastvorimyy-100-gr",
+    "destination": "/product/bushido-red-katana-rastvorimyy-100-gr-0119",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-sensei-zerno-227-gr",
+    "destination": "/product/bushido-227-gr-sensei-zerno-5281",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-sensei-molotyy-227-gr",
+    "destination": "/product/bushido-227-gr-sensei-molotyy-5280",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-specialty-coffee-zerno-227-gr",
+    "destination": "/product/bushido-specialty-coffee-zerno-227-gr-5279",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-don-carlos-zerno-1000-gr",
+    "destination": "/product/carraro-don-carlos-zerno-1000-gr-0793",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-primo-mattino-zerno-1000-gr",
+    "destination": "/product/carraro-primo-mattino-zerno-1000-gr-0792",
+    "permanent": true
+  },
+  {
+    "source": "/product/carte-noire-rastvorimyy-457-gr",
+    "destination": "/product/carte-noire-rastvorimyy-47-5-gr-0057",
+    "permanent": true
+  },
+  {
+    "source": "/product/carte-noire-rastvorimyy-26-paketikov",
+    "destination": "/product/carte-noire-rastvorimyy-1-8-gr-26-paketikov-0054",
+    "permanent": true
+  },
+  {
+    "source": "/product/carte-noire-rastvorimyy-steklo-95-gr",
+    "destination": "/product/carte-noire-rastvorimyy-95-gr-0055",
+    "permanent": true
+  },
+  {
+    "source": "/product/condi-olivkovoe-maslo-extra-virgin-1000-ml",
+    "destination": "/product/condi-olivkovoe-maslo-extra-virgin-1000-ml-4478",
+    "permanent": true
+  },
+  {
+    "source": "/product/condi-olivkovoe-maslo-rafinirovannoe-1000-ml",
+    "destination": "/product/condi-olivkovoe-maslo-rafinirovannoe-1000-ml-4479",
+    "permanent": true
+  },
+  {
+    "source": "/product/davidoff-cafe-grande-cuvee-espresso-57-molotyy-250-gr",
+    "destination": "/product/davidoff-caf-grande-cuv-e-espresso-57-molotyy-250-gr-0089",
+    "permanent": true
+  },
+  {
+    "source": "/product/davidoff-cafe-grande-cuvee-fine-aroma-molotyy-250-gr",
+    "destination": "/product/davidoff-caf-grande-cuv-e-fine-aroma-molotyy-250-gr-0092",
+    "permanent": true
+  },
+  {
+    "source": "/product/davidoff-cafe-grande-cuvee-rich-aroma-molotyy-250-gr",
+    "destination": "/product/davidoff-caf-grande-cuv-e-rich-aroma-molotyy-250-gr-0090",
+    "permanent": true
+  },
+  {
+    "source": "/product/davidoff-fine-rastvorimyy-100-gr",
+    "destination": "/product/davidoff-fine-rastvorimyy-100-gr-2230",
+    "permanent": true
+  },
+  {
+    "source": "/product/davidoff-rich-rastvorimyy-100-gr",
+    "destination": "/product/davidoff-rich-rastvorimyy-100-gr-2231",
+    "permanent": true
+  },
+  {
+    "source": "/product/donat-mg-lechebnaya-mineralnaya-voda-1l",
+    "destination": "/product/donat-mg-lechebnaya-mineralnaya-voda-1l-00001",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-double-espresso-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-100-gr-double-espresso-rastvorimyy-5284",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-espresso-zerno-250-gr",
+    "destination": "/product/egoiste-espresso-zerno-250-gr-0157",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-espresso-molotyy-250-gr",
+    "destination": "/product/egoiste-espresso-molotyy-250-gr-0156",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-noir-zerno-1000-gr",
+    "destination": "/product/egoiste-noir-zerno-1000-gr-0151",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-noir-molotyy-250-gr",
+    "destination": "/product/egoiste-noir-molotyy-250-gr-0154",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-noir-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-noir-rastvorimyy-100-gr-0155",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-platinum-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-platinum-rastvorimyy-100-gr-0150",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-private-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-private-rastvorimyy-100-gr-0149",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-special-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-special-rastvorimyy-100-gr-0120",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-vs-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-vs-rastvorimyy-100-gr-0121",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-velvet-zerno-200-gr",
+    "destination": "/product/egoiste-velvet-zerno-200-gr-3172",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-velvet-rastvorimyy-95-gr",
+    "destination": "/product/egoiste-velvet-rastvorimyy-100-gr-1167",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-xo-rastvorimyy-100-gr",
+    "destination": "/product/egoiste-x-o-rastvorimyy-100-gr-0122",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-zelenyy-chay-flying-dragon-100-paketikov",
+    "destination": "/product/greenfield-zelenyychay-flying-dragon-100-paketikov-3880",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chernyy-chay-earl-grey-fantasy-100-paketikov",
+    "destination": "/product/greenfield-earl-grey-fantasy-100-paketikov-3882",
+    "permanent": true
+  },
+  {
+    "source": "/product/heinz-sous-vorchester-355-ml",
+    "destination": "/product/heinz-sous-vorchester-355-ml-1101",
+    "permanent": true
+  },
+  {
+    "source": "/product/hersheys-sirop-karamelnyy-623-gr",
+    "destination": "/product/pinch-drop-sirop-solenaya-karamel-steklo-1l-0923",
+    "permanent": true
+  },
+  {
+    "source": "/product/huxol-podslastitel-steviya-secret-form-kristaly-170-gr",
+    "destination": "/product/huxol-podslastitel-steviya-secret-form-kristaly-170-gr-5286",
+    "permanent": true
+  },
+  {
+    "source": "/product/huxol-podslastitel-steviya-secret-form-poroshok-40-sashe",
+    "destination": "/product/huxol-podslastitel-steviya-secret-form-poroshok-40-sashe-5285",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-espresso-decaf-bez-kofeina-zerno-250-gr",
+    "destination": "/product/illy-espresso-decaf-bez-kofeina-zerno-250gr-2282",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-espresso-zerno-temnaya-obzharka-250-gr",
+    "destination": "/product/illy-espresso-zerno-temnaya-obzharka-250-gr-2283",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-espresso-molotyy-temnaya-obzharka-250-gr",
+    "destination": "/product/illy-espresso-molotyy-temnaya-obzharka-250-gr-0079",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-moka-molotyy-srednyaya-obzharka-250-gr",
+    "destination": "/product/illy-moka-srednyaya-obzharka-250-gr-mol-0630",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-monoarabica-brazil-zerno-250-gr",
+    "destination": "/product/illy-monoarabica-brazil-zerno-250-gr-0627",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-monoarabica-guatemala-zerno-250-gr",
+    "destination": "/product/illy-monoarabica-guatemala-zerno-250gr-0628",
+    "permanent": true
+  },
+  {
+    "source": "/product/integrita-cahar-trostnikovyy-belyy-kuskovoy-500-gr",
+    "destination": "/product/integrita-sahar-trostnikovyy-belyy-kuskovoy-500gr-2628",
+    "permanent": true
+  },
+  {
+    "source": "/product/integrita-cahar-trostnikovyy-korichnevyy-kuskovoy-500-gr",
+    "destination": "/product/integrita-cahar-trostnikovyy-korichnevyy-kuskovoy-500-gr-2629",
+    "permanent": true
+  },
+  {
+    "source": "/product/jacobs-monarch-rastvorimyy-26-paketikov",
+    "destination": "/product/jacobs-monarch-rastvorimyy-26-paketikov-3917",
+    "permanent": true
+  },
+  {
+    "source": "/product/jacobs-monarch-rastvorimyy-mu-150-gr",
+    "destination": "/product/jacobs-monarch-rastvorimyy-150gr-0072",
+    "permanent": true
+  },
+  {
+    "source": "/product/jacobs-monarch-rastvorimyy-steklo-95-gr",
+    "destination": "/product/jacobs-monarch-rastvorimyy-steklo-95-gr-0068",
+    "permanent": true
+  },
+  {
+    "source": "/product/kikkoman-sous-soevyy-dispenser-150-ml",
+    "destination": "/product/kikkoman-sous-soevyy-dispenser-150-ml-2492",
+    "permanent": true
+  },
+  {
+    "source": "/product/kimbo-aroma-gold-arabica-zerno-1000-gr",
+    "destination": "/product/kimbo-aroma-gold-arabika-zerno-1000-gr-2274",
+    "permanent": true
+  },
+  {
+    "source": "/product/kimbo-aroma-intenso-molotyy-250-gr",
+    "destination": "/product/kimbo-aroma-intenso-molotyy-250-gr-0779",
+    "permanent": true
+  },
+  {
+    "source": "/product/kimbo-decaffinato-zerno-500-gr",
+    "destination": "/product/kimbo-decaffinato-zerno-500-gr-0797",
+    "permanent": true
+  },
+  {
+    "source": "/product/kimbo-intenso-dlya-nespresso-10-sht",
+    "destination": "/product/kimbo-intenso-dlya-nespresso-10-sht-4154",
+    "permanent": true
+  },
+  {
+    "source": "/product/kimbo-napoli-dlya-nespresso-10-sht",
+    "destination": "/product/kimbo-napoli-dlya-nespresso-10-sht-4152",
+    "permanent": true
+  },
+  {
+    "source": "/product/lancaster-kitayskiy-zelenyy-chay-75-gr",
+    "destination": "/product/lancaster-kitayskiy-zelenyy-chay-75-gr-5795",
+    "permanent": true
+  },
+  {
+    "source": "/product/lancaster-napitok-chaynyy-karamelnyy-roybush-100-gr",
+    "destination": "/product/lancaster-napitok-chaynyy-karamelnyy-roybush-100g-5883",
+    "permanent": true
+  },
+  {
+    "source": "/product/lancaster-chernyy-chay-korolevskoe-mango-75-gr",
+    "destination": "/product/lancaster-chernyy-chay-korolevskoe-mango-75-gr-5796",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-caffe-crema-lungo-dlya-lavazza-blue-100-sht",
+    "destination": "/product/kapsula-lavazza-blue-caffe-crema-lungo-1up-100sht-4884",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-caffe-espresso-zerno-1000-gr",
+    "destination": "/product/lavazza-caffe-espresso-zerno-1000-gr-2045",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-caffe-espresso-zerno-250-gr",
+    "destination": "/product/lavazza-caffe-espresso-zerno-250-gr-0033",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-caffe-espresso-molotyy-250-gr",
+    "destination": "/product/lavazza-caffe-espresso-molotyy-250-gr-0028",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-crema-and-aroma-zerno-1000-gr",
+    "destination": "/product/lavazza-crema-aroma-zerno-1000-gr-0035",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-crema-e-gusto-molotyy-250-gr",
+    "destination": "/product/lavazza-crema-e-gusto-molotyy-250gr-0026",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-delicato-dlya-lavazza-blue-100-sht",
+    "destination": "/product/kapsula-lavazza-blue-512-espresso-delicato-lungo-1up-100sht-4877",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-dolce-dlya-lavazza-blue-100-sht",
+    "destination": "/product/kapsula-lavazza-blue-espresso-dolce-1up-100sht-4878",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-oro-zerno-1000-gr",
+    "destination": "/product/lavazza-oro-zerno-1000-gr-1841",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-oro-zerno-250-gr",
+    "destination": "/product/lavazza-oro-zerno-250-gr-0034",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-oro-zerno-500-gr",
+    "destination": "/product/lavazza-oro-zerno-500-gr-2415",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-oro-molotyy-250-gr",
+    "destination": "/product/lavazza-oro-molotyy-250-gr-0029",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-oro-molotyy-zhb-250-gr",
+    "destination": "/product/lavazza-oro-molotyy-zh-b-250-gr-2476",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-qualita-rossa-zerno-1000-gr",
+    "destination": "/product/lavazza-qualita-rossa-zerno-1000-gr-2046",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-qualita-rossa-zerno-250-gr",
+    "destination": "/product/lavazza-qualita-rossa-zerno-250-gr-2473",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-qualita-rossa-molotyy-250-gr",
+    "destination": "/product/lavazza-qualita-rossa-molotyy-250-gr-0027",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-ricco-dlya-lavazza-blue-100-sht",
+    "destination": "/product/kapsula-lavazza-blue-espresso-ricco-1-up-100sht-4880",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-super-crema-zerno-1000-gr",
+    "destination": "/product/lavazza-super-crema-1-kg-0036",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-tierra-blue-dlya-lavazza-blue-100-sht",
+    "destination": "/product/kapsula-lavazza-blue-tierra-1up-100sht-4881",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-tierra-colombia-zerno-1000-gr",
+    "destination": "/product/lavazza-tierra-colombia-zerno-1000-gr-5122",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-top-class-zerno-1000-gr",
+    "destination": "/product/lavazza-top-class-zerno-1000-gr-0038",
+    "permanent": true
+  },
+  {
+    "source": "/product/levante-olivkovoe-maslo-extra-virgin-nerafinirovannoe-1-l",
+    "destination": "/product/levante-olivkovoe-maslo-extra-virgin-nerafinirovannoe-1-l-2432",
+    "permanent": true
+  },
+  {
+    "source": "/product/levante-olivkovoe-maslo-rafinirovannoe-1-l",
+    "destination": "/product/levante-olivkovoe-maslo-rafinirovannoe-1-l-2431",
+    "permanent": true
+  },
+  {
+    "source": "/product/louisiana-original-sous-ostryy-perechnyy-354-ml",
+    "destination": "/product/ostryy-perechnyy-sous-amparosa-946ml-5173",
+    "permanent": true
+  },
+  {
+    "source": "/product/mcilhenny-sous-tabasco-habanero-60-ml",
+    "destination": "/product/mcllhenny-sous-tabasco-habanero-57-ml-4028",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-12-trav-20-paketikov",
+    "destination": "/product/milford-12-trav-20-paketikov-4500",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-energy-20-paketikov",
+    "destination": "/product/milford-energy-20-paketikov-4505",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-suss-podslastitel-zhidkiy-200-ml",
+    "destination": "/product/milford-suss-podslastitel-zhidkiy-200-ml-2576",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-suss-podslastitel-1200-tabletok",
+    "destination": "/product/milford-suss-podslastitel-1200-tabletok-2574",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-wellness-20-paketikov",
+    "destination": "/product/milford-wellness-20-paketikov-4504",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-zelenyy-chay-s-myatoy-20-paketikov",
+    "destination": "/product/milford-zelenyy-chay-s-myatoy-20-paketikov-4491",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-zelenyy-chay-sliva-zhenshen-20-paketikov",
+    "destination": "/product/milford-sliva-zhenshen-20-paketikov-4493",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-zelenyy-chay-yagoda-opuntsii-20-paketikov",
+    "destination": "/product/milford-yagoda-opuntsii-20-paketikov-4489",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-zelenyy-chay-200-paketikov",
+    "destination": "/product/milford-zelenyy-chay-200-paketikov-1522",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-molochnyy-ulun-20-paketikov",
+    "destination": "/product/milford-molochnyy-ulun-20-paketikov-4494",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-myata-perechnaya-20-paketikov",
+    "destination": "/product/milford-myata-perechnaya-20-paketikov-4501",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-podslastitel-steviya-100-tabletok",
+    "destination": "/product/milford-podslastitel-steviya-100-tabletok-2577",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-podslastitel-sukraloza-s-inulinom-370-tabletok",
+    "destination": "/product/milford-sukraloza-s-insulinom-370-tabletok-2578",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-romashka-20-paketikov",
+    "destination": "/product/milford-romashka-20-paketikov-4502",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-sladkaya-malina-20-paketikov",
+    "destination": "/product/milford-sladkaya-malina-20-paketikov-4497",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-trostnikovyy-desertnyy-sahar-500-g",
+    "destination": "/product/milford-trostnikovyy-desertnyy-sahar-500-g-2583",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-trostnikovyy-sahar-kuskovoy-300-g",
+    "destination": "/product/milford-trostnikovyy-sahar-kuskovoy-300-g-2581",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-trostnikovyy-sahar-kuskovoy-500-g",
+    "destination": "/product/milford-trostnikovyy-sahar-kuskovoy-500-g-2582",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-fruktovaya-mechta-20-paketikov",
+    "destination": "/product/milford-fruktovaya-mechta-20-paketikov-4496",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-angliyskiy-zavtrak-200-paketikov",
+    "destination": "/product/milford-angliyskiy-zavtrak-200-paketikov-1523",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-assam-20-paketikov",
+    "destination": "/product/milford-assam-20-paketikov-4482",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-british-grey-20-paketikov",
+    "destination": "/product/milford-british-grey-20-paketikov-4484",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-oblepiha-lesnye-yagody-20-paketikov",
+    "destination": "/product/milford-oblepiha-lesnye-yagody-20-paketikov-4487",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-s-pryanostyami-20-paketikov",
+    "destination": "/product/milford-chernyy-chay-s-pryanostyami-20-paketikov-4486",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-chernyy-chay-s-chabretsom-i-tsvetkami-vereska-20-paketikov",
+    "destination": "/product/milford-s-chabretsom-i-tsvetkami-vereska-20-paketikov-4485",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-shipovnik-20-paketikov",
+    "destination": "/product/milford-shipovnik-20-paketikov-4495",
+    "permanent": true
+  },
+  {
+    "source": "/product/moccona-continental-gold-rastvorimyy-kofe-95-gr",
+    "destination": "/product/moccona-95gr-continental-gold-rastv-4167",
+    "permanent": true
+  },
+  {
+    "source": "/product/nescafe-classic-rastvorimyy-mu-75-gr",
+    "destination": "/product/nescafe-classic-rastvorimyy-75-gr-0066",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-arabica-zerno-1000-gr",
+    "destination": "/product/paulig-arabica-1000gr-zerno-0019",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-arabica-zerno-250-gr",
+    "destination": "/product/paulig-arabica-250gr-zerno-1308",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-arabica-molotyy-250-gr",
+    "destination": "/product/paulig-arabica-250gr-mol-1309",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-havana-zerno-400-gr",
+    "destination": "/product/paulig-cafe-havana-400gr-zerno-3393",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-havana-molotyy-200-gr",
+    "destination": "/product/paulig-cafe-havana-molotyy-200-gr-1993",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-new-york-zerno-400-gr",
+    "destination": "/product/paulig-cafe-new-york-zerno-400-gr-3395",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-new-york-molotyy-200-gr",
+    "destination": "/product/paulig-cafe-new-york-200gr-mol-1994",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-paris-zerno-400-gr",
+    "destination": "/product/paulig-cafe-paris-400gr-zerno-3394",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-cafe-paris-molotyy-200-gr",
+    "destination": "/product/paulig-cafe-paris-200gr-mol-1995",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-classic-zerno-250-gr",
+    "destination": "/product/paulig-classic-250gr-zerno-0020",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-classic-molotyy-dlya-turki-200-gr",
+    "destination": "/product/paulig-classic-molotyy-dlya-turki-200-gr-0350",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-classic-molotyy-250-gr",
+    "destination": "/product/paulig-classic-250gr-molotyy-0014",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-espresso-originale-zerno-1000-gr",
+    "destination": "/product/paulig-espresso-originale-zerno-1000gr-0016",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-espresso-special-zerno-1000-gr",
+    "destination": "/product/paulig-espresso-special-1000gr-zerno-0166",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-mokka-zerno-500-gr",
+    "destination": "/product/paulig-mokka-500gr-zerno-0023",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-mokka-molotyy-dlya-chashki-250-gr",
+    "destination": "/product/paulig-mokka-molotyy-dlya-chashki-250-gr-4622",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-mundo-organic-zerno-250-gr",
+    "destination": "/product/paulig-mundo-organic-zerno-250gr-5091",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-presidentti-zerno-1000-gr",
+    "destination": "/product/paulig-presidentti-1000gr-zerno-1352",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-presidentti-zerno-250-gr",
+    "destination": "/product/paulig-presidentti-250gr-zerno-0012",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-presidentti-molotyy-250-gr",
+    "destination": "/product/paulig-presidentti-250gr-molotyy-0011",
+    "permanent": true
+  },
+  {
+    "source": "/product/paulig-vending-espresso-aroma-zerno-1000-gr",
+    "destination": "/product/paulig-vending-espresso-aroma-zerno-1000-gr-0017",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-apelsin-1-kg",
+    "destination": "/product/topping-d-morozh-vanil-pinch-drop-1kg-plastik-1906",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-belyy-shokolad-1-kg",
+    "destination": "/product/topping-d-morozh-belyy-shokolad-pinch-drop-1kg-plastik-1910",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-karamel-1-kg",
+    "destination": "/product/topping-d-morozh-karamel-pinch-drop-1kg-plastik-2695",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-kivi-1-kg",
+    "destination": "/product/topping-d-morozh-kivi-pinch-drop-1kg-2702",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-persik-1-kg",
+    "destination": "/product/topping-d-morozh-lesnye-yagody-pinch-drop-1l-1908",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-topping-dlya-morozhennogo-shokolad-1-kg",
+    "destination": "/product/topping-d-morozh-shokolad-pinch-drop-1kg-plastik-1905",
+    "permanent": true
+  },
+  {
+    "source": "/product/porto-rosso-espresso-klassicheskiy-dlya-nespresso-10-sht",
+    "destination": "/product/porto-rosso-espresso-dlya-nespresso-10-sht-2227",
+    "permanent": true
+  },
+  {
+    "source": "/product/porto-rosso-ristretto-dlya-nespresso-10-sht",
+    "destination": "/product/porto-rosso-ristretto-dlya-nespresso-10-sht-2228",
+    "permanent": true
+  },
+  {
+    "source": "/product/prb-sous-soevyy-organicheskiy-300-ml",
+    "destination": "/product/prb-sous-soevyy-organicheskiy-300ml-4909",
+    "permanent": true
+  },
+  {
+    "source": "/product/prb-ustrichnyy-sous-vysshey-kategorii-510-gr",
+    "destination": "/product/prb-ustrichnyy-sous-510-gr-4346",
+    "permanent": true
+  },
+  {
+    "source": "/product/prolom-lechebnaya-mineralnaya-voda-15l-v-nur-sultan",
+    "destination": "/product/prolom-lechebnaya-mineralnaya-voda-1-5l-5577",
+    "permanent": true
+  },
+  {
+    "source": "/product/real-tang-kunzhutnoe-maslo-150-ml",
+    "destination": "/product/real-tang-kunzhutnoe-maslo-150-ml-4929",
+    "permanent": true
+  },
+  {
+    "source": "/product/real-thai-kokosovye-slivki-400-ml",
+    "destination": "/product/real-thai-kokosovye-slivki-400-ml-5094",
+    "permanent": true
+  },
+  {
+    "source": "/product/ristora-dabb-goryachiy-shokolad-1000-gr",
+    "destination": "/product/ristora-dabb-goryachiy-shokolad-1-kg-0676",
+    "permanent": true
+  },
+  {
+    "source": "/product/ristora-premium-goryachiy-shokolad-1000-gr",
+    "destination": "/product/ristora-premium-goryachiy-shokolad-1000gr-4714",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-belyy-tselnyy-lesnoy-oreh-i-hlopya-100-gr",
+    "destination": "/product/ritter-sport-belyy-tselnyy-lesnoy-oreh-i-hlopya-100gr-4134",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-alpiyskoe-moloko-100-gr",
+    "destination": "/product/ritter-sport-shokolad-molochnyy-alpiyskoe-moloko-100gr-3996",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-imbirnoe-pechenie-s-kakao-100-gr",
+    "destination": "/product/ritter-sport-imbirnoe-pechene-shokolad-molochnyy-100gr-4132",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-karamelnyy-muss-100-gr",
+    "destination": "/product/ritter-sport-shokolad-molochnyy-karamelnyy-muss-100gr-3999",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-s-droblennym-lesnym-orehom-100-gr",
+    "destination": "/product/ritter-sport-shokolad-molochnyy-s-droblennym-lesnym-orehom-100gr-4001",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-s-tselnym-lesnym-orehom-100-gr",
+    "destination": "/product/ritter-sport-tselnyy-lesnoy-oreh-shokolad-molochnyy-100gr-3991",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-tselnyy-mindal-100-gr",
+    "destination": "/product/ritter-sport-tselnyy-mindal-shokolad-molochnyy-100gr-4140",
+    "permanent": true
+  },
+  {
+    "source": "/product/rudolfuv-pramen-lechebnaya-mineralnaya-voda-15l",
+    "destination": "/product/rudolfuv-pramen-lechebnaya-mineralnaya-voda-1-5l-5578",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-bazilik-145-gr",
+    "destination": "/product/santa-maria-bazilik-145g-3788",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-dip-sous-guakamole-250-gr",
+    "destination": "/product/santa-maria-dip-sous-guakamole-250-g-0291",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-karmashki-tako-kukuruznye-135-gr",
+    "destination": "/product/santa-maria-karmashki-tako-kukuruznye-135g-5036",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-koriandr-molotyy-355-gr",
+    "destination": "/product/santa-maria-koriandr-molotyy-355gr-0213",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-kumin-molotyy-430-gr",
+    "destination": "/product/santa-maria-kumin-430-g-0215",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-oregano-65-gr",
+    "destination": "/product/santa-maria-oregano-65-gr-4899",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-perets-kayenskiy-molotyy-450-gr",
+    "destination": "/product/santa-maria-perets-kayenskiy-450gr-0231",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-k-grilyu-610-gr",
+    "destination": "/product/santa-maria-priprava-k-grilyu-610-gr-0243",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-k-kartofelyu-800-gr",
+    "destination": "/product/santa-maria-priprava-k-kartofelyu-800-gr-0244",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-k-kuritse-650-gr",
+    "destination": "/product/santa-maria-priprava-k-kuritse-650-gr-0245",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-limonnaya-k-rybe-500-gr",
+    "destination": "/product/santa-maria-priprava-k-rybe-limonnaya-500-gr-0248",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-tako-532-gr",
+    "destination": "/product/santa-maria-smes-spetsiy-tako-532gr-0294",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-priprava-fahita-28-gr",
+    "destination": "/product/santa-maria-smes-spetsiy-fahita-28-g-5042",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-sladkiy-sous-chili-1950-ml",
+    "destination": "/product/santa-maria-sous-sladkiy-chili-1-95-l-0279",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-sous-ostryy-perechnyy-85-ml",
+    "destination": "/product/santa-maria-sous-ostryy-perechnyy-85-ml-3782",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-sredizemnomorskie-travy-340-gr",
+    "destination": "/product/santa-maria-sredizemnomorskie-travy-340gr-0255",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-steykhauz-barbekyu-565-gr",
+    "destination": "/product/santa-maria-priprava-steykhauz-barbekyu-565g-2380",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-travy-provansa-205-gr",
+    "destination": "/product/santa-maria-travy-provansa-205gr-0258",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-universalnyy-sous-dlya-grilya-2360-gr",
+    "destination": "/product/santa-maria-sous-universalnyy-dlya-grilya-2575-gr-0269",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-ustrichnyy-sous-500-ml",
+    "destination": "/product/santa-maria-sous-ustrichnyy-500ml-12-0278",
+    "permanent": true
+  },
+  {
+    "source": "/product/sfi-arahisovaya-pasta-myagkaya-510-gr",
+    "destination": "/product/sfi-pasta-arahisovaya-myagkaya-510g-12-2277",
+    "permanent": true
+  },
+  {
+    "source": "/product/shoprite-gorchitsa-yellow-mustard-397-gr",
+    "destination": "/product/zheltaya-gorchitsa-shoprite-567-gr-5188",
+    "permanent": true
+  },
+  {
+    "source": "/product/shoprite-sous-balzamicheskiy-473-ml",
+    "destination": "/product/balzamicheskiy-sous-shoprite-472-ml-1041",
+    "permanent": true
+  },
+  {
+    "source": "/product/shoprite-sous-dlya-salata-tsezar-473-ml",
+    "destination": "/product/sous-dlya-salata-tsezar-shoprite-473-gr-1033",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-blend-8-zerno-200-gr",
+    "destination": "/product/today-blend-8-zerno-200-gr-2005",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-blend-8-molotyy-200-gr",
+    "destination": "/product/today-blend-8-molotyy-200-gr-2006",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-espresso-rastvorimyy-150-gr",
+    "destination": "/product/today-espresso-150-g-rastvoriyy-m-u-2001",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-espresso-rastvorimyy-95-gr",
+    "destination": "/product/today-espresso-rastvorimyy-95-g-0159",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-green-rastvorimyy-95-gr",
+    "destination": "/product/today-green-rastvorimyy-95-gr-0162",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-ineo-in-fi-rastvorimyy-95-gr",
+    "destination": "/product/today-ineo-in-fi-rastvorimyy-95-gr-2004",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-pure-arabica-rastvorimyy-150-gr",
+    "destination": "/product/today-pure-arabica-150-g-subl-m-u-2002",
+    "permanent": true
+  },
+  {
+    "source": "/product/today-pure-arabica-rastvorimyy-95-gr",
+    "destination": "/product/today-pure-arabica-rastvorimyy-95-g-0164",
+    "permanent": true
+  },
+  {
+    "source": "/product/vincentka-lechebnaya-mineralnaya-voda-700-ml-v-nur-sultan",
+    "destination": "/product/vincentka-lechebnaya-mineralnaya-voda-700-ml-5576",
+    "permanent": true
+  },
+  {
+    "source": "/product/wheat-village-yaichnaya-lapsha-250-gr",
+    "destination": "/product/wheat-village-yaichnaya-lapsha-250-gr-4349",
+    "permanent": true
+  },
+  {
+    "source": "/product/blyuz-assorti-dlya-nespresso-11-sht",
+    "destination": "/product/blyuz-assorti-dlya-nespresso-11-sht-4281",
+    "permanent": true
+  },
+  {
+    "source": "/product/blyuz-espresso-allegro-dlya-nespresso-10-sht",
+    "destination": "/product/blyuz-espresso-allegro-10-sht-4282",
+    "permanent": true
+  },
+  {
+    "source": "/product/blyuz-espresso-amaretto-dlya-nespresso-10-sht",
+    "destination": "/product/blyuz-espresso-amaretto-10-sht-4287",
+    "permanent": true
+  },
+  {
+    "source": "/product/blyuz-espresso-vanil-dlya-nespresso-10-sht",
+    "destination": "/product/blyuz-espresso-vanil-10-sht-4288",
+    "permanent": true
+  },
+  {
+    "source": "/product/blyuz-espresso-shokolad-dlya-nespresso-10-sht",
+    "destination": "/product/blyuz-espresso-shokolad-10-sht-4291",
+    "permanent": true
+  },
+  {
+    "source": "/product/domashniy-pogrebok-sirop-iz-topinambura-330-gr",
+    "destination": "/product/domashniy-pogrebok-sirop-iz-topinambura-330gr-4322",
+    "permanent": true
+  },
+  {
+    "source": "/product/zhivoy-kofe-amerikano-dlya-dolce-gusto-16-sht",
+    "destination": "/product/zhivoy-kofe-amerikano-dlya-dolce-gusto16-sht-5324",
+    "permanent": true
+  },
+  {
+    "source": "/product/zhivoy-kofe-kapuchino-dlya-dolce-gusto-16-sht",
+    "destination": "/product/zhivoy-kofe-kappuchino-dlya-dolce-gusto-16-shtuk-5325",
+    "permanent": true
+  },
+  {
+    "source": "/product/zhivoy-kofe-latte-makiato-so-vkusom-karameli-dlya-dolce-gusto-16-sht",
+    "destination": "/product/zhivoy-kofe-latte-makiato-so-vkusom-karameli-dlya-dolce-gusto-16-shtuk-5326",
+    "permanent": true
+  },
+  {
+    "source": "/product/zhivoy-kofe-espresso-dlya-dolce-gusto-16-sht",
+    "destination": "/product/zhivoy-kofe-espresso-dlya-dolce-gusto-16-sht-5327",
+    "permanent": true
+  },
+  {
+    "source": "/product/zayechitskaya-gorkaya-lechebnaya-mineralnaya-voda-500-ml-v-nur-sultan",
+    "destination": "/product/zayechitskaya-gorkaya-lechebnaya-mineralnaya-voda-500-ml-5575",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-acqua-panna-075-l-steklo-15-sht",
+    "destination": "/product/acqua-panna-special-edition-0-75-l-st-but-mineralnaya-voda-0850",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-perrier-naturel-033-l-steklo-24-sht",
+    "destination": "/product/mineralnaya-voda-perrier-naturel-0-33-l-steklo-0843",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-san-pellegrino-025-l-steklo-24-sht",
+    "destination": "/product/mineralnaya-voda-san-pellegrino-0-25-l-steklo-24-sht-0852",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-san-pellegrino-075-l-steklo-15-sht",
+    "destination": "/product/san-pellegrino-special-edition-0-75-l-st-but-mineralnaya-voda-0853",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-vittel-05-l-24-sht",
+    "destination": "/product/mineralnaya-voda-vittel-0-5-l-24-sht-0832",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-vittel-1-l-6-sht",
+    "destination": "/product/mineralnaya-voda-vittel-1-0-l-6-sht-0834",
+    "permanent": true
+  },
+  {
+    "source": "/product/moloko-lactel-s-vitaminom-d-25-1l-8-sht",
+    "destination": "/product/laktel-fm-s-vitaminom-d-2-5-1-l-4275",
+    "permanent": true
+  },
+  {
+    "source": "/product/moloko-lactel-s-vitaminom-d-32-1l-8-sht",
+    "destination": "/product/laktel-fm-s-vitaminom-d-3-2-1-l-4276",
+    "permanent": true
+  },
+  {
+    "source": "/product/pechenie-gribochki-assorti-nyashki-1-kg",
+    "destination": "/product/pechene-gribochki-assorti-nyashki-1-kg-2772",
+    "permanent": true
+  },
+  {
+    "source": "/product/pechenie-gribochki-v-shokoladnoy-glazuri-nyashki-1-kg",
+    "destination": "/product/pechene-gribochki-v-shokoladnoy-glazuri-nyashki-1-kg-2770",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-ananas-200-ml-steklo-24-sht",
+    "destination": "/product/sok-pago-ananas-0-2-ml-0862",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-apelsin-200-ml-steklo-24-sht",
+    "destination": "/product/sok-pago-apelsin-0-2-ml-0859",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-vishnya-200-ml-steklo-24-sht",
+    "destination": "/product/sok-pago-vishnya-0-2-ml-0856",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-vishnya-750-ml-steklo-6-sht",
+    "destination": "/product/sok-pago-vishnya-0-75-ml-0867",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-persik-200-ml-steklo-24-sht",
+    "destination": "/product/sok-pago-persik0-2-ml-0860",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-yabloko-200-ml-steklo-24-sht",
+    "destination": "/product/sok-pago-yabloko-0-2-ml-0858",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-yabloko-750-ml-steklo-6-sht",
+    "destination": "/product/sok-pago-yabloko-0-75-0863",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-layma-casa-rinaldi-200-ml",
+    "destination": "/product/casa-rinaldi-sok-layma-200-ml-2960",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-limonnyy-sitsiliyskiy-casa-rinaldi-200-ml",
+    "destination": "/product/casa-rinaldi-sok-limonnyy-sitsiliyskiy-200-ml-2961",
+    "permanent": true
+  },
+  {
+    "source": "/product/sokosoderzhaschiy-napitok-san-pellegrino-aranciata-033-l-24-sht",
+    "destination": "/product/san-pellegrino-aranciata-0874",
+    "permanent": true
+  },
+  {
+    "source": "/product/sokosoderzhaschiy-napitok-san-pellegrino-aranciata-rossa-033-l-24-sht",
+    "destination": "/product/san-pelligrino-aranciata-rossa-0875",
+    "permanent": true
+  },
+  {
+    "source": "/product/sokosoderzhaschiy-napitok-san-pellegrino-limonata-033-l-24-sht",
+    "destination": "/product/san-pelligrino-limonata-0872",
+    "permanent": true
+  },
+  {
+    "source": "/product/sous-krasnyy-perechnyy-tabasco-60-ml",
+    "destination": "/product/mcilhenny-perechnyy-sous-krasnyy-tabasco-60-ml-3944",
+    "permanent": true
+  },
+  {
+    "source": "/product/tertyy-syr-shoprite-grated-parmesan-227-gr",
+    "destination": "/product/priprava-syrnaya-shoprite-tertyy-parmezan-227-gr-0529",
+    "permanent": true
+  },
+  {
+    "source": "/product/energeticheskiy-napitok-red-bull-250-ml-24-shtuki",
+    "destination": "/product/red-bull-250-ml-2040",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-pasta-tom-yam-krasnaya-50-gr",
+    "destination": "/product/aroy-d-pasta-tom-yam-krasnaya-50gr-7056",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-black-katana-zerno-227-gr",
+    "destination": "/product/bushido-black-katana-zerno-227-gr-5456",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-black-katana-molotyy-227-gr",
+    "destination": "/product/bushido-black-katana-molotyy-227-gr-5457",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-original-rastvorimyy-mu-75-gr",
+    "destination": "/product/bushido-original-rastvorimyy-m-u-75gr-5375",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-sprey-200-ml",
+    "destination": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-sprey-200-ml-6759",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-balzamicheskiy-klassicheskiy-250-ml",
+    "destination": "/product/filippo-berio-sous-balzamicheskiy-klassicheskiy-250-ml-6767",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-balzamicheskiy-s-chernym-tryufelem-250-ml",
+    "destination": "/product/filippo-berio-sous-balzamicheskiy-c-chernym-tryufelem-250-ml-6768",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-pesto-s-maslinami-190-gr",
+    "destination": "/product/filippo-berio-sous-pesto-s-maslinami-190-ml-6855",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-pesto-s-tomatami-190-gr",
+    "destination": "/product/filippo-berio-sous-pesto-s-tomatami-190-ml-6763",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-uksus-balzamicheskiy-250-ml",
+    "destination": "/product/filippo-berio-uksus-balzamicheskiy-250-ml-6769",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-professional-napitok-soevoy-osnove-kokos-1l",
+    "destination": "/product/green-milk-barista-kokos-napitok-soevoy-osnove-1l-7091",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chernyy-chay-classic-breakfast-100-paketikov",
+    "destination": "/product/greenfield-chay-chernyy-classic-breakfast-100-paketikov-5376",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-golden-ceylon-100-paketikov",
+    "destination": "/product/greenfield-golden-ceylon-chernyy-chay-100-paketikov-5425",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-amabile-dlya-lavazza-blue-100-sht-2",
+    "destination": "/product/kapsula-lavazza-blue-espresso-amabile-lungo-1up-100sht-4875",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-caffe-crema-zerno-1000-gr",
+    "destination": "/product/movenpick-caffe-crema-zerno-1000-gr-6013",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-caffe-crema-zerno-500-gr",
+    "destination": "/product/movenpick-caffe-crema-zerno-500-gr-6946",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-der-himmlische-zerno-1000-gr",
+    "destination": "/product/movenpick-der-himmilische-zerno-1000-gr-7128",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-el-autentico-zerno-1000-gr",
+    "destination": "/product/movenpick-el-autentico-zerno-1000-gr-6948",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-espresso-zerno-1000-gr",
+    "destination": "/product/movenpick-espresso-zerno-1000-gr-7129",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-gusto-italiano-zerno-1000-gr",
+    "destination": "/product/movenpick-gusto-italiano-zerno-1000-gr-6014",
+    "permanent": true
+  },
+  {
+    "source": "/product/movenpick-schumli-zerno-1000-gr",
+    "destination": "/product/movenpick-schumli-zerno-1000-gr-7234",
+    "permanent": true
+  },
+  {
+    "source": "/product/mutti-tomatnaya-pasta-140-gr",
+    "destination": "/product/mutti-tomatnaya-pasta-140gr-6989",
+    "permanent": true
+  },
+  {
+    "source": "/product/mutti-tomatnyy-sous-dlya-pitstsy-klassicheskiy-400-gr",
+    "destination": "/product/mutti-tomatnyy-sous-dlya-pitstsy-klassicheskiy-400gr-6827",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-original-165-gr",
+    "destination": "/product/pringles-chipsy-kartofelnye-original-165-gr-7048",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-paprika-165-gr",
+    "destination": "/product/pringles-chipsy-kartofelnye-paprika-165-gr-7050",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-smetana-zelenyy-luk-165-gr",
+    "destination": "/product/pringles-chipsy-kartofelnye-smetana-zelenyy-luk-165-gr-7052",
+    "permanent": true
+  },
+  {
+    "source": "/product/shoprite-arahisovoe-maslo-kremovoe-462-gr",
+    "destination": "/product/shoprite-arahisovaya-pasta-462-gr-krasnaya-kryshka-7019",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-mineralnaya-voda-steklo-330-ml",
+    "destination": "/product/borzhomi-steklo-min-voda-0-33-5634",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-mineralnaya-voda-steklo-500-ml",
+    "destination": "/product/borzhomi-min-voda-steklo-0-5-5635",
+    "permanent": true
+  },
+  {
+    "source": "/product/domashniy-pogrebok-sirop-iz-topinambura-650-ml",
+    "destination": "/product/domashniy-pogrebok-sirop-iz-topinambura-650ml-5787",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-zernovoy-caffe-boasi-gran-crema-1000-gr",
+    "destination": "/product/boasi-gran-crema-1-kg-zerno-0903",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-v-zernah-caffe-boasi-gran-riserva-1000-gr",
+    "destination": "/product/boasi-gran-riserva-1-kg-0904",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-v-zernah-boasi-linea-professional-super-crema-1000-g",
+    "destination": "/product/boasi-super-crema-1-kg-zerno-0905",
+    "permanent": true
+  },
+  {
+    "source": "/product/san-pellegrino-sokosoderzhaschiy-napitok-melograno-arancia-033-l-24-sht",
+    "destination": "/product/san-pelligrino-melograno-arancia-0-33-zhb-7150",
+    "permanent": true
+  },
+  {
+    "source": "/product/sprayt-steklo-025",
+    "destination": "/product/sprayt-steklo-0-25-24sht-0966",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-yabloko-02l",
+    "destination": "/product/piko-yabloko-0-2l-0955",
+    "permanent": true
+  },
+  {
+    "source": "/product/bonakva-negaz-pet-05",
+    "destination": "/product/bonakva-negaz-pet-05-7611",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-pago-tomatnyy-02-ml",
+    "destination": "/product/sok-pago-tomatnyy-0-2-ml-0861",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-vittel-033-l-24-sht",
+    "destination": "/product/mineralnaya-voda-vittel-0-33-l-24-sht-0831",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kleykaya-risovaya-muka-400-gr-3",
+    "destination": "/product/aroy-d-kleykaya-risovaya-muka-400-gr-5419",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-temnyy-shokolad-s-tselnym-lesnym-orehom-100gr",
+    "destination": "/product/ritter-sport-tselnyy-lesnoy-ore-temnyy-100gr-3993",
+    "permanent": true
+  },
+  {
+    "source": "/product/bonakva-gaz-pet-1-l",
+    "destination": "/product/bonakva-gaz-pet-1-l-7610",
+    "permanent": true
+  },
+  {
+    "source": "/product/stakan-bumazhnyy-odnorazovyy-dvuhsloynyy-350ml",
+    "destination": "/product/sirop-amaretto-monin-steklo-250-ml-0960",
+    "permanent": true
+  },
+  {
+    "source": "/product/salfetki-50l-bouquet-tropical-2-h-sloynye-belye",
+    "destination": "/product/salfetki-50l-bouquet-tropical-2-h-sloynye-belye-0957",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-espresso-zerno-srednyaya-obzharka-250-gr-3",
+    "destination": "/product/illy-espresso-250-gr-zerno-0076",
+    "permanent": true
+  },
+  {
+    "source": "/product/mai-lao-da-lapsha-steklyannaya-08-mm-robot-500-gr-2",
+    "destination": "/product/mai-lao-da-lapsha-steklyannaya-0-8-mm-robot-500-gr-7292",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-tomatnyy-klassicheskiy-310-gr",
+    "destination": "/product/kinto-sous-tomatnyy-klassicheskiy-310-gr-5532",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-tomatnyy-shashlychnyy-305-gr",
+    "destination": "/product/kinto-sous-tomatnyy-shashlychnyy-305-gr-5521",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-uksus-yablochnyy-250-ml",
+    "destination": "/product/kinto-uksus-yablochnyy-250-ml-5552",
+    "permanent": true
+  },
+  {
+    "source": "/product/stakan-bumazhnyy-dlya-goryachih-napitkov-kraft-250-ml",
+    "destination": "/product/stakan-bumazhnyy-dlya-goryachih-napitkov-kraft-250-ml-0959",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-apelsin-02l",
+    "destination": "/product/piko-apelsin-0-2l-0947",
+    "permanent": true
+  },
+  {
+    "source": "/product/crystal-sahar-900-gr",
+    "destination": "/product/crystal-sahar-rafinad-900-gr-0906",
+    "permanent": true
+  },
+  {
+    "source": "/product/fanta-250-ml-steklo",
+    "destination": "/product/fanta-250-ml-steklo-24sht-0908",
+    "permanent": true
+  },
+  {
+    "source": "/product/lofbergs-brazil-zerno-1kg",
+    "destination": "/product/lofbergs-brazil-zerno-1kg-7205",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-vanil-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-vanil-steklo-1l-0912",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-karamel-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-karamel-steklo-1l-0917",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-shokolad-steklo-1l",
+    "destination": "/product/kukuruznyy-krahmal-argo-454-gr-0931",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-lesnoy-oreh-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-lesnoy-oreh-steklo-1l-0924",
+    "permanent": true
+  },
+  {
+    "source": "/product/dozator-p-d10-ml-dstek-but-10l-plastik-belyy",
+    "destination": "/product/dozator-p-d-10-ml-d-stek-but-1-0l-plastik-belyy-9861",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-025-steklo",
+    "destination": "/product/koka-kola-0-25-steklo-0981",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-pet-1l",
+    "destination": "/product/koka-kola-pet-1l-0935",
+    "permanent": true
+  },
+  {
+    "source": "/product/napitok-bezalkolnyy-sok-limonnyy-kontsentrirovannyy-pinch-drop-steklo-1l",
+    "destination": "/product/napitok-bezalkagolnyy-sok-limonnyy-kontsentrirovannyy-pinch-drop-steklo-1l-0938",
+    "permanent": true
+  },
+  {
+    "source": "/product/sirop-karamel-odk-steklo-075l",
+    "destination": "/product/sirop-karamel-odk-steklo-0-75l-10001",
+    "permanent": true
+  },
+  {
+    "source": "/product/sirop-lesnoy-oreh-odk-steklo-075l",
+    "destination": "/product/sirop-lesnoy-oreh-odk-steklo-0-75l-0999",
+    "permanent": true
+  },
+  {
+    "source": "/product/sprayt-pet-05",
+    "destination": "/product/sprayt-pet-0-5-12sht-0964",
+    "permanent": true
+  },
+  {
+    "source": "/product/sprayt-pet-1l",
+    "destination": "/product/sprayt-pet-1l-0965",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-mango-ananas-pet-05",
+    "destination": "/product/santa-maria-sous-burbon-barbekyu-viski-1165-gr-7168",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-persik-pet-05",
+    "destination": "/product/fyus-chay-persik-pet-0-5-0983",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-sladkiy-chili-dlya-kuritsy-920-gr-2",
+    "destination": "/product/aroy-d-sous-sladkiy-chili-dlya-kuritsy-920-gr-6695",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-red-katana-molotyy-227-gr-2",
+    "destination": "/product/bushido-red-katana-molotyy-227-gr-7170",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-pesto-klassicheskiy-190-ml",
+    "destination": "/product/filippo-berio-sous-pesto-klassicheskiy-190-ml-6762",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-zero-025-steklo",
+    "destination": "/product/koka-kola-zero-0-25-steklo-0934",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-yagoda-pet-05",
+    "destination": "/product/fyus-chay-yagoda-pet-0-5-0969",
+    "permanent": true
+  },
+  {
+    "source": "/product/toplife-kinoa-trikolor-premium-300gr",
+    "destination": "/product/toplife-kinoa-trikolor-premium-300gr-0247",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-tomatnyy-satsebeli-domashniy-300-gr",
+    "destination": "/product/kinto-sous-tomatnyy-satsebeli-domashniy-300-gr-5529",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-apelsin-tetra-1l",
+    "destination": "/product/piko-apelsin-tetra-1l-0948",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-persik-tetra-1l",
+    "destination": "/product/piko-persik-tetra-1l-0952",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-yabloko-tetra-1l",
+    "destination": "/product/piko-yabloko-tetra-1l-0956",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-kokosovoe-moloko-400ml-zhb",
+    "destination": "/product/aroy-d-kokosovoe-moloko-400ml-zh-b-7298",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-mango-ananas-pet-1l",
+    "destination": "/product/fyus-chay-mango-ananas-pet-1l-8918",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-pet-min-voda-075",
+    "destination": "/product/borzhomi-pet-min-voda-0-75-7612",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-green-freshness-100-g-ceylon-green-tea",
+    "destination": "/product/basilur-green-freshness-100-g-ceylon-green-tea-7137",
+    "permanent": true
+  },
+  {
+    "source": "/product/perechnyy-sous-luiziana-354-ml",
+    "destination": "/product/perechnyy-sous-luiziana-354-ml-0996",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-samal-025-negaz-pet",
+    "destination": "/product/mineralnaya-voda-samal-0-25-negaz-pet-7355",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-temnyy-shokolad-mindal-i-apelsin-100gr",
+    "destination": "/product/ritter-sport-temnyy-shokolad-mindal-i-apelsin-100gr-7141",
+    "permanent": true
+  },
+  {
+    "source": "/product/acqua-panna-special-edition-025l-stbut-mineralnaya-voda",
+    "destination": "/product/acqua-panna-special-edition-0-25l-st-but-mineralnaya-voda-0851",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-vishnevyy-nektar-1l",
+    "destination": "/product/sok-pago-ananas-0-2-ml-0862",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-yablochnyy-osvetlennyy-1l",
+    "destination": "/product/sok-rich-yablochnyy-osvetlennyy-1l-9850",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-apelsinovyy-s-myakotyu-02-ml",
+    "destination": "/product/sok-pago-persik-1-0865",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-persik-s-myakotyu-02-ml",
+    "destination": "/product/sok-pago-yabloko-0-75-0863",
+    "permanent": true
+  },
+  {
+    "source": "/product/gorchitsa-dizhonskaya-frantsuzskaya-roland-370-gr",
+    "destination": "/product/filippo-berio-sous-pesto-s-tryufilem-190-ml-7349",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-syr-i-luk-165-gr-2",
+    "destination": "/product/lavazza-tierra-bio-organic-molotyy-180-gr-7140",
+    "permanent": true
+  },
+  {
+    "source": "/product/shoprite-s-karamelyu-arahisovaya-pasta-454-gr",
+    "destination": "/product/shoprite-s-karamelyu-arahisovaya-pasta-454-gr-sinyaya-kryshka-7020",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-persik-s-myakotyu-1l",
+    "destination": "/product/sok-rich-persik-s-myakotyu-1l-9851",
+    "permanent": true
+  },
+  {
+    "source": "/product/sirop-vanil-odk-steklo-075l",
+    "destination": "/product/bonakva-negaz-pet-1l-0932",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-kenyan-sunrise100paketikov",
+    "destination": "/product/greenfield-chay-chernyy-kenyan-sunrise-100-paketikov-7204",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-barbekyu-165gr",
+    "destination": "/product/lavazza-tierra-bio-organic-molotyy-180-gr-7140",
+    "permanent": true
+  },
+  {
+    "source": "/product/toplife-semena-chia-chernye-premium-200gr",
+    "destination": "/product/santa-maria-priprava-k-rybe-limonnaya-500-gr-0248",
+    "permanent": true
+  },
+  {
+    "source": "/product/sirop-solenaya-karamel-odk-075ml",
+    "destination": "/product/sirop-solenaya-karamel-odk-075ml-7160",
+    "permanent": true
+  },
+  {
+    "source": "/product/eilles-rostmeister-cafe-crema-1000gr-zerno",
+    "destination": "/product/eilles-rostmeister-cafe-crema-1000gr-zerno-7131",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-yabloko-02",
+    "destination": "/product/sok-pago-vishnya-0-75-ml-0867",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-tomat-02ml",
+    "destination": "/product/sok-pago-apelsin-0-75-0864",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-min-voda-025-negaz-steklo",
+    "destination": "/product/chay-althaus-meleng-chernyy-20-paketikov-0975",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-rich-vishnevyy-nektar-02",
+    "destination": "/product/sok-rich-vishnevyy-nektar-02-0866",
+    "permanent": true
+  },
+  {
+    "source": "/product/mcilhenny-tabasco-perechnyy-sous-krasnyy-57-ml",
+    "destination": "/product/mcilhenny-tabasco-perechnyy-sous-krasnyy-57-ml-6772",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-sous-balzamicheskiy-malina-250-ml",
+    "destination": "/product/filippo-berio-sous-balzamicheskiy-malina-250-ml-6770",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-zelenaya-dynya-steklo-1l",
+    "destination": "/product/shoprite-klenovyy-sirop-k-blinam-709ml-0928",
+    "permanent": true
+  },
+  {
+    "source": "/product/topping-dmorozh-chernika-pinch-drop-1l",
+    "destination": "/product/topping-d-morozh-klubnika-pinch-drop-1l-1907",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-tayskiy-ananas-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-lesnoy-oreh-steklo-1l-0924",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-fillipinskoe-mango-steklo-1-l",
+    "destination": "/product/pinch-drop-sirop-marakuyya-steklo-1-l-0921",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-samal-05-negaz-steklo",
+    "destination": "/product/mineralnaya-voda-samal-0-5-negaz-steklo-0994",
+    "permanent": true
+  },
+  {
+    "source": "/product/bezlaktoznoe-moloko-legkoe-utro-25-1-l",
+    "destination": "/product/koka-kola-0-25-steklo-0981",
+    "permanent": true
+  },
+  {
+    "source": "/product/tomatnyy-ketchup-shoprite-107kg",
+    "destination": "/product/sirop-karamel-monin-steklo-250-ml-0961",
+    "permanent": true
+  },
+  {
+    "source": "/product/ristora-bar-shokoladnyy-napitok-1000-gr",
+    "destination": "/product/ristora-bar-shokoladnyy-napitok-1000-gr-0997",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-min-voda-s-gazom-025-steklo",
+    "destination": "/product/chay-althaus-sencha-senpay-20-paketikov-zelenyy-paketirovannyy-0976",
+    "permanent": true
+  },
+  {
+    "source": "/product/salfetki-karina",
+    "destination": "/product/salfetki-karina-0998",
+    "permanent": true
+  },
+  {
+    "source": "/product/ledentsy-bayan-sulu-1kg",
+    "destination": "/product/ledentsy-bayan-sulu-1kg-0991",
+    "permanent": true
+  },
+  {
+    "source": "/product/julius-meinl-vena-melanzh-bristol-1kg-zerno",
+    "destination": "/product/geisha-konfety-iz-molochnogo-shokolada-morskoy-solyu-i-karameli-150g-9838",
+    "permanent": true
+  },
+  {
+    "source": "/product/selpak-salfetki-trehsl-70sht-up",
+    "destination": "/product/chay-althaus-inglish-brekfast-250g-chay-chernyy-listovoy-0971",
+    "permanent": true
+  },
+  {
+    "source": "/product/selpak-salfetki-trehsl-100sht-up",
+    "destination": "/product/selpak-salfetki-trehsl-100sht-up-0970",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-mango-romashka-05-pet",
+    "destination": "/product/fyus-chay-mango-romashka-05-pet-7162",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokolad-kazahstan-0020gr",
+    "destination": "/product/sprayt-pet-0-5-12sht-0964",
+    "permanent": true
+  },
+  {
+    "source": "/product/red-bull-sugar-free-250-ml",
+    "destination": "/product/red-bull-sugar-free-250-ml-2041",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokolad-rahat-65",
+    "destination": "/product/shokolad-rahat-65-7167",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokolad-rahat-80",
+    "destination": "/product/salfetki-karina-0998",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-075-steklo-negazir",
+    "destination": "/product/chay-althaus-red-frut-flesh-250g-napitok-fruktovyy-aromat-0973",
+    "permanent": true
+  },
+  {
+    "source": "/product/jacobs-monarch-500gr-mu-rastvorimyy",
+    "destination": "/product/jacobs-monarch-500gr-m-u-rastvorimyy-7133",
+    "permanent": true
+  },
+  {
+    "source": "/product/moloko-ultrapast-professional-line-ekoniva-25-1000-ml-tba-slim",
+    "destination": "/product/moloko-ultrapast-professional-line-ekoniva-2-5-1000-ml-tba-slim-7146",
+    "permanent": true
+  },
+  {
+    "source": "/product/aroy-d-sous-sladkiy-chili-350-gr",
+    "destination": "/product/aroy-d-sous-sladkiy-chili-350-gr-7135",
+    "permanent": true
+  },
+  {
+    "source": "/product/julius-meinl-trieste-1000-gr",
+    "destination": "/product/julius-meinl-espresso-special-gold-1000-gr-3692",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-amaretto-1l",
+    "destination": "/product/ballonchiki-d-sifona-d-slivok-50sht-0926",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-smes-spetsiy-fahita-532-g",
+    "destination": "/product/santa-maria-smes-spetsiy-fahita-532-g-0246",
+    "permanent": true
+  },
+  {
+    "source": "/product/minvoda-sary-agash-15l-gaz",
+    "destination": "/product/minvoda-sarya-ash-1-5l-gaz-00002",
+    "permanent": true
+  },
+  {
+    "source": "/product/basilur-zelenyy-chay-green-sencha-100-gr",
+    "destination": "/product/basilur-zelenyy-chay-green-sencha-100-gr-7299",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-tomat-sous-s-bazilikom-340gr",
+    "destination": "/product/filippo-berio-tomatnyy-sous-s-bazilikom-340gr-6771",
+    "permanent": true
+  },
+  {
+    "source": "/product/egoiste-voyage-zerno-1000gr",
+    "destination": "/product/egoiste-voyage-zerno-1000gr-7139",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-black-katana-rastvorimyy-100-gr-3",
+    "destination": "/product/bushido-black-katana-rastvorimyy-100-gr-0118",
+    "permanent": true
+  },
+  {
+    "source": "/product/bushido-red-katana-rastvorimyy-mu-75-gr-2",
+    "destination": "/product/bushido-red-katana-rastvorimyy-m-u-75gr-0146",
+    "permanent": true
+  },
+  {
+    "source": "/product/milford-suss-podslastitel-650-tabletok-2",
+    "destination": "/product/mcllhenny-sous-tabasco-zelenyy-perechnyy-57-ml-3945",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-gorchitsa-bavarskaya-oktoberfest-170-ml",
+    "destination": "/product/kinto-gorchitsa-bavarskaya-oktoberfest-170-ml-7211",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-sladkiy-chili-183gr",
+    "destination": "/product/kinto-sous-sladkiy-chili-183gr-5523",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-tomatnyy-satsebeli-ohotnichiy-300-gr",
+    "destination": "/product/kinto-sous-tomatnyy-satsebeli-ohotnichiy-300-gr-5522",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-toreo-arabica-dulce-100-1000gr",
+    "destination": "/product/kofe-toreo-arabica-dulce-100-1000gr-0990",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-persik-zhb-0330-ml",
+    "destination": "/product/sirop-shokoladnoe-pechene-monin-steklo-250-ml-0963",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-mango-ananas-zhb-330-ml",
+    "destination": "/product/fyus-chay-mango-ananas-zhb-330-ml-7161",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-limonad-so-vkus-tsitrus-033ml-zhb",
+    "destination": "/product/fyus-chay-romashka-pet-0-5-0985",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-limonad-so-vkus-grushi-033ml-zhb",
+    "destination": "/product/fyus-chay-persik-pet-0-5-0983",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-limonad-so-vkus-adzhar-mandarina-033ml-zhb",
+    "destination": "/product/fyus-chay-limon-pet-1l-0982",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-limonad-so-vkus-tarhun-033ml-zhb",
+    "destination": "/product/fyus-chay-persik-pet-1l-0984",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-arbuz-pet-05",
+    "destination": "/product/fyus-chay-arbuz-pet-05-0962",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokol-batonchiki-mini-milky-way-176-gr",
+    "destination": "/product/shokoladnye-batonchiki-mini-milky-way-176-gr-7164",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokol-batonchiki-mini-snickers-180gr",
+    "destination": "/product/shokoladnye-batonchiki-mini-snickers-180gr-7165",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokol-batonchiki-mini-twix-184gr",
+    "destination": "/product/shokoladnye-batonchiki-mini-twix-184gr-7166",
+    "permanent": true
+  },
+  {
+    "source": "/product/polotentse-selpak-4-rulona",
+    "destination": "/product/polotentse-selpak-4-rulona-7149",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-voda-025-negaz-pet",
+    "destination": "/product/tassay-voda-0-25-negaz-pet-0974",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-pet-minvoda-1l",
+    "destination": "/product/fyus-chay-yagoda-pet-1l-0986",
+    "permanent": true
+  },
+  {
+    "source": "/product/shveps-450ml-zhb",
+    "destination": "/product/shveps-450ml-zhb-7163",
+    "permanent": true
+  },
+  {
+    "source": "/product/razmeshivatel-derevyannyyv-individ-upak-250sht",
+    "destination": "/product/razmeshivatel-derevyannyyv-individ-upak-250sht-7148",
+    "permanent": true
+  },
+  {
+    "source": "/product/vorchester-sous-heinz-532-ml",
+    "destination": "/product/vorchester-sous-heinz-532-ml-0987",
+    "permanent": true
+  },
+  {
+    "source": "/product/zinus-barista-rastit-moloko-kokos-1l",
+    "destination": "/product/chay-althaus-uayl-berriz-20-paketikov-fruktovyy-paketirovannyy-0977",
+    "permanent": true
+  },
+  {
+    "source": "/product/zinus-barista-rastit-moloko-mindal-1l",
+    "destination": "/product/zinus-barista-rastitelnoe-moloko-mindal-1l-0978",
+    "permanent": true
+  },
+  {
+    "source": "/product/zinus-barista-rastit-moloko-ovsyanoe-1l",
+    "destination": "/product/shveps-zh-b-0979",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-toreo-vending-special-80-rob-20-arab-1000gr",
+    "destination": "/product/kofe-toreo-vending-special-80-rob-20-arab-1000gr-09901",
+    "permanent": true
+  },
+  {
+    "source": "/product/min-voda-stolovaya-pitievaya-bakuriani-bez-gaza-05-steklo",
+    "destination": "/product/min-voda-stolovaya-pitevaya-bakuriani-bez-gaza-05-steklo-7613",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokoladnyy-sirop-nesquik-623gr",
+    "destination": "/product/shokoladnyy-sirop-nesquik-623gr-9003",
+    "permanent": true
+  },
+  {
+    "source": "/product/kukuruznyy-krahmal-argo-454-gr",
+    "destination": "/product/kukuruznyy-krahmal-argo-454-gr-0931",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-persik-02l",
+    "destination": "/product/piko-persik-0-2l-0951",
+    "permanent": true
+  },
+  {
+    "source": "/product/hershey-karamelnyy-sirop",
+    "destination": "/product/hershey-s-karamelnyy-sirop-9000",
+    "permanent": true
+  },
+  {
+    "source": "/product/red-bull-red-edition-250-ml",
+    "destination": "/product/red-bull-yellow-edition-250-ml-6967",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-gorchitsa-dizhonskaya-170-gr",
+    "destination": "/product/kinto-gorchitsa-dizhonskaya-170-gr-5547",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-kokos-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-kokos-steklo-1l-0919",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-sous-krem-granatovyy-200-gr",
+    "destination": "/product/kinto-sous-krem-granatovyy-200-gr-5517",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-7-zlakov-100gr",
+    "destination": "/product/dr-korner-hlebtsy-7-zlakov-100gr-7286",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-borodinskie100gr",
+    "destination": "/product/dr-korner-hlebtsy-borodinskie-100gr-7287",
+    "permanent": true
+  },
+  {
+    "source": "/product/minvoda-turan-02520-gaz-steklo",
+    "destination": "/product/min-voda-turan-0-25-20-gaz-steklo-7351",
+    "permanent": true
+  },
+  {
+    "source": "/product/lavazza-tierra-1kg",
+    "destination": "/product/lavazza-tierra-1kg-0604",
+    "permanent": true
+  },
+  {
+    "source": "/product/bonakva-gaz-pet-05",
+    "destination": "/product/bonakva-gaz-pet-0-5-7609",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-limon-pet-05",
+    "destination": "/product/fyus-chay-limon-pet-0-5-0980",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-multifrukt-tetra-1l",
+    "destination": "/product/piko-multifrukt-tetra-1l-0950",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-marakuyya-steklo-1-l",
+    "destination": "/product/pinch-drop-sirop-marakuyya-steklo-1-l-0921",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-malina-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-malina-steklo-1l-0920",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-klubnika-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-klubnika-steklo-1l-0918",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-zelenoe-yabloko-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-zelenoe-yabloko-steklo-1l-0916",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-apelsin-steklo-1l",
+    "destination": "/product/wheat-village-lapsha-udon-300-gr-0930",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-grenadin-steklo-1-l",
+    "destination": "/product/pinch-drop-sirop-grenadin-steklo-1-l-0913",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-persik-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-persik-steklo-1l-0922",
+    "permanent": true
+  },
+  {
+    "source": "/product/klubnichnyy-sirop-nesquik-623gr",
+    "destination": "/product/klubnichnyy-sirop-nesquik-623gr-9002",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-samal-05-negaz-pet",
+    "destination": "/product/mineralnaya-voda-samal-0-5-negaz-pet-0933",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-shokolad-molochnyy-s-kusochkami-solenogo-keshyu-100-gr",
+    "destination": "/product/ritter-sport-shokolad-molochnyy-s-kusochkami-solenogo-keshyu-100-gr-7142",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-limon-pet-1l",
+    "destination": "/product/fyus-chay-limon-pet-1l-0982",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-arbuz-steklo-1l",
+    "destination": "/product/bezalkogolnyy-gazirovannyy-napitok-v-plastikovoy-butylke-coca-cola-klassik-obem--0927",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-mohito-steklo-1l",
+    "destination": "/product/arahisovaya-pasta-vegan-food-340gr-0925",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-05-pet",
+    "destination": "/product/koka-kola-0-5-pet-24sht-0988",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-ayrish-krem-steklo-1l",
+    "destination": "/product/ballonchiki-d-sifona-d-slivok-50sht-0926",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonnyy-sok-shoprite-946-ml",
+    "destination": "/product/limonnyy-sok-shoprite-946-ml-9860",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-zelenaya-myata-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-malina-steklo-1l-0920",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-zhb-330-ml",
+    "destination": "/product/borzhomi-zh-b-330-ml-1190",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-aroma-e-gusto-dlya-dolce-gusto-16-sht",
+    "destination": "/product/carraro-aroma-e-gusto-dlya-dolce-gusto-16-sht-9863",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-capuchino-dlya-dolce-gusto-16-sht",
+    "destination": "/product/carraro-capuchino-dlya-dolce-gusto-16-sht-9862",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-crema-espresso-dlya-nespresso-10-sht",
+    "destination": "/product/carraro-crema-espresso-dlya-nespresso-10-sht-9858",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-decaffeniato-dlya-nespresso-10-sht",
+    "destination": "/product/carraro-decaffeniato-dlya-nespresso-10-sht-7171",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-ethiopia-dlya-nespresso-10-sht",
+    "destination": "/product/carraro-ethiopia-dlya-nespresso-10-sht-7172",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-honduras-dlya-nespresso-10-sht",
+    "destination": "/product/carraro-honduras-dlya-nespresso-10-sht-9857",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-kinoalenrozmarin100-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-kinoa-len-rozmarin-100-gr-7175",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-provanskie-travy100-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-provanskie-travy-100-gr-7176",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-s-goroshkom-i-chechevitsey50-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-s-goroshkom-i-chechevitsey-50-gr-7177",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-s-goroshkom-fasolyu-i-kinoa100-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-s-goroshkom-fasolyu-i-kinoa-50-gr-7178",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-tomat-i-bazilik100-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-tomat-i-bazilik-50-gr-7179",
+    "permanent": true
+  },
+  {
+    "source": "/product/elza-natural-chicory-tsikoriy-100-gr-2",
+    "destination": "/product/elza-natural-chicory-tsikoriy-100-gr-7182",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-masliny-bez-kostochki-300-gr",
+    "destination": "/product/filippo-berio-masliny-bez-kostochki-300-gr-7188",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-delicato-500-ml",
+    "destination": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-delicato-500-ml-7189",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-s-chesnokom-250-ml",
+    "destination": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-s-chesnokom-250-ml-9854",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-olivki-bez-kostochki-300-gr",
+    "destination": "/product/filippo-berio-olivki-bez-kostochki-300-gr-7190",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-olivki-s-anchousom-300-gr",
+    "destination": "/product/dr-korner-hlebtsy-zlakovyy-kokteyl-syrnyy-100gr-7290",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-olivki-s-limonom-300-gr",
+    "destination": "/product/filippo-berio-olivki-s-limonom-300-gr-7191",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-olivki-s-lososem-300-gr",
+    "destination": "/product/filippo-berio-olivki-s-lososem-300-gr-7192",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-olivki-s-pertsem-300-gr",
+    "destination": "/product/dr-korner-hlebtsy-zlakovyy-kokteyl-miks-90gr-7291",
+    "permanent": true
+  },
+  {
+    "source": "/product/filippo-berio-uksus-vinnyy-krasnyy-500-ml",
+    "destination": "/product/filippo-berio-uksus-vinnyy-krasnyy-500-ml-7193",
+    "permanent": true
+  },
+  {
+    "source": "/product/foco-organicheskoe-kokosovoe-moloko-250-ml",
+    "destination": "/product/foco-organicheskoe-kokosovoe-moloko-250-ml-9876",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-zelenyy-flying-dragon-25-paketikov-2",
+    "destination": "/product/greenfield-chay-zelenyy-flying-dragon-25-paketikov-2048",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-travyanoy-summer-bouquet-100-paketikov",
+    "destination": "/product/lavazza-caffe-espresso-zerno-1000-gr-2045",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-temnyy-shokolad-74-kakao-100-gr",
+    "destination": "/product/ritter-sport-temnyy-shokolad-74-kakao-100-gr-1181",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-temnyy-shokolan-martsipan-100-gr",
+    "destination": "/product/ritter-sport-temnyy-shokolan-martsipan-100-gr-1182",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-temnyy-shokolad-tselnyy-mindal-100-gr",
+    "destination": "/product/ritter-sport-temnyy-shokolad-tselnyy-mindal-100-gr-9888",
+    "permanent": true
+  },
+  {
+    "source": "/product/frima-slivki-suhie-500-gr-2",
+    "destination": "/product/frima-slivki-suhie-500-gr-7194",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-zemlyanika-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-grusha-konferentsiya-steklo-1l-0914",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-karamelnye-30-gr",
+    "destination": "/product/dr-korner-hlebtsy-karamelnye-30-gr-7173",
+    "permanent": true
+  },
+  {
+    "source": "/product/gloriss-jefrutto-zhevatelnye-konfety-persik-mangostin-75-gr",
+    "destination": "/product/gloriss-jefrutto-zhevatelnye-konfety-persik-mangostin-75-gr-7195",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-professional-napitok-soevyy-obogaschyonnyy-kaltsiem-i-vitaminami-1l",
+    "destination": "/product/green-milk-barista-soya-napitok-obogaschennyy-kaltsiem-i-vitaminami-1l-7094",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-zelenyy-green-melissa-25-paketikov-2",
+    "destination": "/product/greenfield-chay-zelenyy-green-melissa-25-paketikov-2049",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-zelenyy-jasmin-dream-25-paketikov",
+    "destination": "/product/greenfield-chay-zelenyy-jasmin-dream-25-paketikov-2050",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-earl-grey-fantasy-25-paketikov-2",
+    "destination": "/product/lavazza-qualita-rossa-zerno-1000-gr-2046",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-premuim-assam-25-paketikov",
+    "destination": "/product/greenfield-chay-chernyy-premuim-assam-25-paketikov-2052",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-s-limonom-lemon-spark-25-paketikov",
+    "destination": "/product/greenfield-chay-chernyy-s-limonom-lemon-spark-25-paketikov-2054",
+    "permanent": true
+  },
+  {
+    "source": "/product/lotte-pechenie-choco-pie-12-h-28-gr",
+    "destination": "/product/lotte-pechene-choco-pie-12-h-28-gr-7196",
+    "permanent": true
+  },
+  {
+    "source": "/product/orion-pechenie-choco-pie-6-h-30-gr",
+    "destination": "/product/orion-pechene-choco-pie-6-h-30-gr-7324",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-tetra-vishnya-1l",
+    "destination": "/product/piko-tetra-vishnya-1l-1196",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-pet-05",
+    "destination": "/product/borzhomi-pet-0-5-1191",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-kivi-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-kivi-steklo-1l-10000",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-kukuruzno-risovye-karamel-90-gr",
+    "destination": "/product/dr-korner-hlebtsy-kukuruzno-risovye-karamel-90-gr-7174",
+    "permanent": true
+  },
+  {
+    "source": "/product/drkorner-hlebtsy-risovye-v-molochnom-shokolade-67-gr",
+    "destination": "/product/dr-korner-hlebtsy-risovye-v-molochnom-shokolade-67-gr-7180",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-kenyan-sunrise-25-paketikov-2",
+    "destination": "/product/greenfield-chay-chernyy-kenyan-sunrise-25-paketikov-2051",
+    "permanent": true
+  },
+  {
+    "source": "/product/zhidkoe-mylo-kimberly-clark-kleenex-1000-ml-beloe",
+    "destination": "/product/zhidkoe-mylo-kimberly-clark-kleenex-1000-mlb-bolee-1194",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chernyy-chay-golden-ceylon-25-paketikov",
+    "destination": "/product/greenfield-chernyy-chay-golden-ceylon-25-paketikov-2055",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-zelenyy-flying-dragon-100-gr-2",
+    "destination": "/product/greenfield-chay-zelenyy-flying-dragon-100-gr-2047",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-smes-iz-pyati-vidov-pertsa-190-gr-2",
+    "destination": "/product/santa-maria-smes-iz-pyati-vidov-pertsa-190-gr-1184",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-mindal-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-zheltyy-banan-steklo-1l-0915",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-brazilskiy-laym-steklo-1l",
+    "destination": "/product/pinch-drop-sirop-brazilskiy-laym-steklo-1l-9983",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-professional-napitok-ovsyanoy-1l",
+    "destination": "/product/green-milk-barista-ovsyanoy-napitok-1l-7095",
+    "permanent": true
+  },
+  {
+    "source": "/product/pringles-chipsy-kartofelnye-syr-165-gr-2",
+    "destination": "/product/pringles-chipsy-kartofelnye-syr-165-gr-1179",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-professional-napitok-soevyy-na-osnove-lesnoy-oreh-1l",
+    "destination": "/product/green-milk-professional-napitok-risovoy-osnove-mindal-1l-7093",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-professional-napitok-na-soevoy-osnove-mindal-1l",
+    "destination": "/product/green-milk-professional-napitok-risovoy-osnove-lesnoy-oreh-1l-7092",
+    "permanent": true
+  },
+  {
+    "source": "/product/borzhomi-pet-125-l",
+    "destination": "/product/borzhomi-pet-1-25-l-1192",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-chernyy-s-barbarisom-barberry-garden-25-paketikov",
+    "destination": "/product/greenfield-chay-chernyy-s-barbarisom-barberry-garden-25-paketikov-2053",
+    "permanent": true
+  },
+  {
+    "source": "/product/tess-chay-chernyy-forest-dream-20-piramidok-2",
+    "destination": "/product/tess-chay-chernyy-forest-dream-20-piramidok-9878",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-excellent-075-negaz-steklo",
+    "destination": "/product/santa-maria-smes-iz-pyati-vidov-pertsa-190-gr-1184",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-emerald-075-gaz-steklo",
+    "destination": "/product/foco-kokosovaya-voda-organik-1l-3966",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-napitok-soevyy-s-aromatom-vanili-1l",
+    "destination": "/product/green-milk-napitok-soevyy-s-aromatom-vanili-1l-7096",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-15l-gaz-pet",
+    "destination": "/product/santa-maria-smes-iz-pyati-vidov-pertsa-190-gr-1184",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-popkorn-steklo-1l",
+    "destination": "/product/arahisovaya-pasta-vegan-food-340gr-0925",
+    "permanent": true
+  },
+  {
+    "source": "/product/tess-chay-chernyy-sunrise-100-gr",
+    "destination": "/product/tess-chay-chernyy-sunrise-100-gr-1187",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-shokoladnoe-pechenie-s-kusochkami-temnogo-i-molochnogo-shokolada-150-gr",
+    "destination": "/product/merba-shokoladnoe-pechene-s-kusochkami-temnogo-i-molochnogo-shokolada-150-gr-7202",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-raduzhnoe-shokoladnoe-pechenie-s-kusochkami-temnogo-shokolada-i-drazhe-iz-molochnogo-shokolady-150-gr",
+    "destination": "/product/merba-raduzhnoe-shokoladnoe-pechene-s-kusochkami-temnogo-shokolada-i-drazhe-iz-m-7201",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-pechenie-s-nugoy-s-kusochkami-temnogo-shokolada-i-nachinkoy-iz-funduka-175-gr",
+    "destination": "/product/merba-pechene-s-nugoy-s-kusochkami-temnogo-shokolada-i-nachinkoy-iz-funduka-175--7199",
+    "permanent": true
+  },
+  {
+    "source": "/product/green-milk-napitok-soevyy-so-vkusom-banana-1l",
+    "destination": "/product/green-milk-barista-banan-napitok-soevyy-1l-7097",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-pet-1l-negaz",
+    "destination": "/product/tassay-pet-1l-negaz-1186",
+    "permanent": true
+  },
+  {
+    "source": "/product/shokol-kazahstan-s-flagom-0275gr",
+    "destination": "/product/shokol-kazahstan-s-flagom-0-275gr-7203",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl005-vkusoaromaticheskaya-smes-sream-latte-limonnyy-tart-s-merengoy-500gr",
+    "destination": "/product/cl005-vkusoaromaticheskaya-smes-sream-latte-limonnyy-tart-s-merengoy-500gr-1135",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl002-vkusoaromaticheskaya-smes-sream-latte-kokos-malina-500gr",
+    "destination": "/product/cl002-vkusoaromaticheskaya-smes-sream-latte-kokos-malina-500gr-1132",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl003-vkusoaromaticheskaya-smes-sream-latte-solenyy-kreker-500gr",
+    "destination": "/product/cl003-vkusoaromaticheskaya-smes-sream-latte-solenyy-kreker-500gr-1133",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl004-vkusoaromaticheskaya-smes-sream-latte-vaflya-popkorn-500gr",
+    "destination": "/product/cl004-vkusoaromaticheskaya-smes-sream-latte-vaflya-popkorn-500gr-1134",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl008-vkusoaromaticheskaya-smes-sream-latte-arahisovaya-halva-500gr",
+    "destination": "/product/cl008-vkusoaromaticheskaya-smes-sream-latte-arahisovaya-halva-500gr-1136",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl001-vkusoaromaticheskaya-smes-sream-latte-vishnevaya-panakota-500gr",
+    "destination": "/product/cl001-vkusoaromaticheskaya-smes-sream-latte-vishnevaya-panakota-500gr-1131",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl009-vkusoaromaticheskaya-smes-sream-latte-varenaya-sguschenka-tykva-500gr",
+    "destination": "/product/cl009-vkusoaromaticheskaya-smes-sream-latte-varenaya-sguschenka-tykva-500gr-1137",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl047-vkusoaromaticheskaya-smes-sream-latte-vanilnyy-500gr",
+    "destination": "/product/cl047-vkusoaromaticheskaya-smes-sream-latte-vanilnyy-500gr-1139",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl053-vkusoaromaticheskaya-smes-sream-latte-lavandovyy-500gr",
+    "destination": "/product/cl053-vkusoaromaticheskaya-smes-sream-latte-lavandovyy-500gr-1140",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl154-vkusoaromatichekaya-smes-sream-latte-tsitrusovyy-500-gr",
+    "destination": "/product/cl154-vkusoaromatichekaya-smes-sream-latte-tsitrusovyy-500-gr-1141",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml006-vkusoaromaticheskaya-smes-matcha-latte-klassicheskaya-500gr",
+    "destination": "/product/ml006-vkusoaromaticheskaya-smes-matcha-latte-klassicheskaya-500gr-1170",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml005-vkusoaromaticheskaya-smes-matcha-latte-zelyonaya-bergamot-500gr",
+    "destination": "/product/ml005-vkusoaromaticheskaya-smes-matcha-latte-zelenaya-bergamot-500gr-1169",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml004-vkusoaromaticheskaya-smes-matcha-latte-zhyoltaya-pryanaya-grusha-500gr",
+    "destination": "/product/ml004-vkusoaromaticheskaya-smes-matcha-latte-zheltaya-pryanaya-grusha-500gr-1168",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml012-vkusoaromaticheskaya-smes-matcha-latte-sinyaya-cheremuha-anchan-500gr",
+    "destination": "/product/ml012-vkusoaromaticheskaya-smes-matcha-latte-sinyaya-cheremuha-anchan-500gr-1172",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs042-vkusoaromaticheskaya-smes-cordial-shake-margarita-500gr",
+    "destination": "/product/cs042-vkusoaromaticheskaya-smes-cordial-shake-margarita-500gr-1143",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs079-vkusoaromaticheskaya-smes-cordial-shake-mango-marakuyya-500gr",
+    "destination": "/product/cs079-vkusoaromaticheskaya-smes-cordial-shake-mango-marakuyya-500gr-1145",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs080-vkusoaromaticheskaya-smes-cordial-shake-ananas-imbir-500gr",
+    "destination": "/product/cs080-vkusoaromaticheskaya-smes-cordial-shake-ananas-imbir-500gr-1146",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs021-vkusoaromaticheskaya-smes-cordial-shake-mohito-bazilik-klubnika-500gr",
+    "destination": "/product/cs021-vkusoaromaticheskaya-smes-cordial-shake-mohito-bazilik-klubnika-500gr-1142",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs081-vkusoaromaticheskaya-smes-cordial-shake-mandarin-klyukva-mozhzhevelnik-500gr",
+    "destination": "/product/cs081-vkusoaromaticheskaya-smes-cordial-shake-mandarin-klyukva-mozhzhevelnik-500-1147",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs044-vkusoaromaticheskaya-smes-cordial-shake-spritts-500gr",
+    "destination": "/product/cs044-vkusoaromaticheskaya-smes-cordial-shake-spritts-500gr-1144",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs095-vkusoaromaticheskaya-smes-cordial-shake-tayozhnye-travy-500gr",
+    "destination": "/product/cs095-vkusoaromaticheskaya-smes-cordial-shake-taezhnye-travy-500gr-1151",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs091-vkusoaromaticheskaya-smes-cordial-shake-tonik-originalnyy-500gr",
+    "destination": "/product/cs091-vkusoaromaticheskaya-smes-cordial-shake-tonik-originalnyy-500gr-1149",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs097-vkusoaromaticheskaya-smes-cordial-shake-tonik-tsitrusovyy-500gr",
+    "destination": "/product/cs097-vkusoaromaticheskaya-smes-cordial-shake-tonik-tsitrusovyy-500gr-1152",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs090-vkusoaromaticheskaya-smes-cordial-shake-tonik-sakura-500gr",
+    "destination": "/product/cs090-vkusoaromaticheskaya-smes-cordial-shake-tonik-sakura-500gr-1148",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs092-vkusoaromaticheskaya-smes-cordial-shake-tonik-matcha-500gr",
+    "destination": "/product/cs092-vkusoaromaticheskaya-smes-cordial-shake-tonik-matcha-500gr-1150",
+    "permanent": true
+  },
+  {
+    "source": "/product/cs100-vkusoaromaticheskaya-smes-cordial-shake-tonik-chyornaya-smorodina-500gr",
+    "destination": "/product/cs100-vkusoaromaticheskaya-smes-cordial-shake-tonik-chernaya-smorodina-500gr-1153",
+    "permanent": true
+  },
+  {
+    "source": "/product/bj002-vkusoaromaticheskaya-smes-berry-jam-glintveyn-500gr",
+    "destination": "/product/bj002-vkusoaromaticheskaya-smes-berry-jam-glintveyn-500gr-1122",
+    "permanent": true
+  },
+  {
+    "source": "/product/bj006-vkusoaromaticheskaya-smes-berry-jam-oblepiha-500gr",
+    "destination": "/product/bj006-vkusoaromaticheskaya-smes-berry-jam-oblepiha-500gr-1123",
+    "permanent": true
+  },
+  {
+    "source": "/product/bj019-vkusoaromaticheskaya-smes-berry-jam-malina-rozmarin-500gr",
+    "destination": "/product/bj019-vkusoaromaticheskaya-smes-berry-jam-malina-rozmarin-500gr-1125",
+    "permanent": true
+  },
+  {
+    "source": "/product/bj017-vkusoaromaticheskaya-smes-berry-jam-mango-marakuyya-chili-500gr",
+    "destination": "/product/bj017-vkusoaromaticheskaya-smes-berry-jam-mango-marakuyya-chili-500gr-1124",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss058-vkusoaromaticheskaya-smes-sugar-syrup-lesnoy-oreh-500gr",
+    "destination": "/product/ss058-vkusoaromaticheskaya-smes-sugar-syrup-lesnoy-oreh-500gr-1160",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss061-vkusoaromaticheskaya-smes-sugar-syrup-malina-kokos-500gr",
+    "destination": "/product/ss061-vkusoaromaticheskaya-smes-sugar-syrup-malina-kokos-500gr-1162",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss062-vkusoaromaticheskaya-smes-sugar-syrup-limonnyy-tart-s-merengoy-500gr",
+    "destination": "/product/ss062-vkusoaromaticheskaya-smes-sugar-syrup-limonnyy-tart-s-merengoy-500gr-1163",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss063-vkusoaromaticheskaya-smes-sugar-syrup-vaflya-popkorn-500gr",
+    "destination": "/product/ss063-vkusoaromaticheskaya-smes-sugar-syrup-vaflya-popkorn-500gr-1164",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss064-vkusoaromaticheskaya-smes-sugar-syrup-bananovoe-morozhenoe-s-solenoy-karamelyu-500gr",
+    "destination": "/product/ss064-vkusoaromaticheskaya-smes-sugar-syrup-bananovoe-morozhenoe-s-solenoy-karam-1165",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss057-vkusoaromaticheskaya-smes-sugar-syrup-karamel-slivochnyy-iris-500gr",
+    "destination": "/product/ss057-vkusoaromaticheskaya-smes-sugar-syrup-karamel-slivochnyy-iris-500gr-1159",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss060-vkusoaromaticheskaya-smes-sugar-syrup-vishnevaya-panakota-500gr",
+    "destination": "/product/ss060-vkusoaromaticheskaya-smes-sugar-syrup-vishnevaya-panakota-500gr-1161",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss068-vkusoaromaticheskaya-smes-sugar-syrup-lesnye-yagody-500gr",
+    "destination": "/product/egoiste-velvet-rastvorimyy-100-gr-1167",
+    "permanent": true
+  },
+  {
+    "source": "/product/ss066-vkusoaromaticheskaya-smes-sugar-syrup-vanil-500gr",
+    "destination": "/product/ss066-vkusoaromaticheskaya-smes-sugar-syrup-vanil-500gr-1166",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms011-vkusoaromaticheskaya-smes-milk-shake-bananovyy-puding-500gr",
+    "destination": "/product/ms011-vkusoaromaticheskaya-smes-milk-shake-bananovyy-puding-500gr-1175",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms012-vkusoaromaticheskaya-smes-milk-shake-shokoladnyy-plombir-500gr",
+    "destination": "/product/ms012-vkusoaromaticheskaya-smes-milk-shake-shokoladnyy-plombir-500gr-1176",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms013-vkusoaromaticheskaya-smes-milk-shake-vaflya-popkorn-500gr",
+    "destination": "/product/ms013-vkusoaromaticheskaya-smes-milk-shake-vaflya-popkorn-500gr-1177",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch024-vkusoaromaticheskaya-smes-chocolatte-kakao-shokoladnyy-500gr",
+    "destination": "/product/vkusoaromaticheskaya-smes-chocolatte-kakao-shokoladnyy-500-gr-1130",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch020-vkusoaromaticheskaya-smes-chocolatte-kakao-izyskannyy-500gr",
+    "destination": "/product/ch020-vkusoaromaticheskaya-smes-chocolatte-kakao-izyskannyy-500gr-1126",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch022-vkusoaromaticheskaya-smes-chocolatte-kakao-spaysi-500gr",
+    "destination": "/product/ch022-vkusoaromaticheskaya-smes-chocolatte-kakao-spaysi-500gr-1128",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch021-vkusoaromaticheskaya-smes-chocolatte-goryachiy-shokolad-500gr",
+    "destination": "/product/ch021-vkusoaromaticheskaya-smes-chocolatte-goryachiy-shokolad-500gr-1127",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch023-vkusoaromaticheskaya-smes-chocolatte-kakao-s-apelsinom-500gr",
+    "destination": "/product/ch023-vkusoaromaticheskaya-smes-chocolatte-kakao-s-apelsinom-500gr-1129",
+    "permanent": true
+  },
+  {
+    "source": "/product/gg005-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-barbaris-s-50gr",
+    "destination": "/product/gg005-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-barbaris-s-50gr-1155",
+    "permanent": true
+  },
+  {
+    "source": "/product/gg003-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-banan-50gr",
+    "destination": "/product/gg003-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-banan-50gr-1154",
+    "permanent": true
+  },
+  {
+    "source": "/product/gg034-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-vafelnyy-stakanchik-50gr",
+    "destination": "/product/gg034-vkusoaromaticheskaya-smes-grainy-glaze-vzryvnoy-vafelnyy-stakanchik-50gr-1158",
+    "permanent": true
+  },
+  {
+    "source": "/product/gg012-vkusoaromaticheskaya-smes-grainy-glaze-malina-50gr",
+    "destination": "/product/gg012-vkusoaromaticheskaya-smes-grainy-glaze-malina-50gr-1156",
+    "permanent": true
+  },
+  {
+    "source": "/product/gg017-vkusoaromaticheskaya-smes-grainy-glaze-solenaya-karamel-50gr",
+    "destination": "/product/gg017-vkusoaromaticheskaya-smes-grainy-glaze-solenaya-karamel-50gr-1157",
+    "permanent": true
+  },
+  {
+    "source": "/product/sprayt-zhb-450-ml",
+    "destination": "/product/sprayt-zhb-450-ml-12sht-9849",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-imbirnyy-pryanik-1l",
+    "destination": "/product/shoprite-klenovyy-sirop-k-blinam-709ml-0928",
+    "permanent": true
+  },
+  {
+    "source": "/product/greenfield-chay-travyanoy-summer-bouquet-25-paketikov",
+    "destination": "/product/merci-250gr-7314",
+    "permanent": true
+  },
+  {
+    "source": "/product/carraro-aroma-e-gusto-dlya-nespresso-10-sht",
+    "destination": "/product/carraro-aroma-e-gusto-dlya-nespresso-10-sht-7138",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-chernaya-smorodina-1l",
+    "destination": "/product/pinch-drop-sirop-chernaya-smorodina-1l-0929",
+    "permanent": true
+  },
+  {
+    "source": "/product/nabeglavi-05-steklo",
+    "destination": "/product/nabeglavi-0-5-steklo-7169",
+    "permanent": true
+  },
+  {
+    "source": "/product/tess-chay-chernyy-sunrise-100-paket",
+    "destination": "/product/ristora-shokoladnyy-napitok-1000-gr-1188",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-myagkoe-pechenie-s-kakao-soft-muffin-s-kusochkami-molochnogo-belogo-i-temnogo-shokolada-175-gr",
+    "destination": "/product/oho-suhoy-zavtrak-choca-150gr-7197",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-pechenie-s-belym-shokoladom-i-klyukvoy-150-gr",
+    "destination": "/product/merba-pechene-s-belym-shokoladom-i-klyukvoy-150-gr-7198",
+    "permanent": true
+  },
+  {
+    "source": "/product/merba-pechenie-s-temnym-shokoladom-i-fundukom-200-gr",
+    "destination": "/product/merba-pechene-s-temnym-shokoladom-i-fundukom-200-gr-7200",
+    "permanent": true
+  },
+  {
+    "source": "/product/fantastico-shokoladno-orehovaya-pasta-330-gr-6",
+    "destination": "/product/fantastico-shokoladno-orehovaya-pasta-330-gr-6-7187",
+    "permanent": true
+  },
+  {
+    "source": "/product/fantastico-premium-shokoladno-orehovaya-pasta-s-kusochkami-funduka-300gr",
+    "destination": "/product/fantastico-premium-shokoladno-orehovaya-pasta-s-kusochkami-funduka-300gr-7185",
+    "permanent": true
+  },
+  {
+    "source": "/product/fantastico-premium-shokoladno-orehovaya-pasta-s-kusochkami-funduka-180-gr",
+    "destination": "/product/fantastico-premium-shokoladno-orehovaya-pasta-s-kusochkami-funduka-180-gr-7184",
+    "permanent": true
+  },
+  {
+    "source": "/product/fantastico-shokoladno-orehovaya-pasta-180-gr-6",
+    "destination": "/product/fantastico-shokoladno-orehovaya-pasta-180-gr-6-7186",
+    "permanent": true
+  },
+  {
+    "source": "/product/tess-pleasureblack-tea-151009",
+    "destination": "/product/milford-apelsin-imbir-200-paketikov-7315",
+    "permanent": true
+  },
+  {
+    "source": "/product/pyure-oblepiha-fruktovoe-pinchdrop-plastik-1l",
+    "destination": "/product/bezalkogolnyy-gazirovannyy-napitok-v-plastikovoy-butylke-coca-cola-klassik-obem--0927",
+    "permanent": true
+  },
+  {
+    "source": "/product/san-pelligrino-clementina",
+    "destination": "/product/san-pellegrino-clementina-5356",
+    "permanent": true
+  },
+  {
+    "source": "/product/lofbergs-medium-roast-zerno-1000-gr",
+    "destination": "/product/lofbergs-medium-roast-zerno-1000-gr-7132",
+    "permanent": true
+  },
+  {
+    "source": "/product/pinchdrop-sirop-brauni-1l",
+    "destination": "/product/pinch-drop-sirop-brauni-1l-9867",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-san-pellegrino-tonica-citrus-200ml-2",
+    "destination": "/product/mineralnaya-voda-san-pellegrino-tonica-citrus-200ml-1195",
+    "permanent": true
+  },
+  {
+    "source": "/product/tassay-pet-1l-gaz",
+    "destination": "/product/tassay-pet-1l-gaz-1185",
+    "permanent": true
+  },
+  {
+    "source": "/product/fanta-450ml-zhb",
+    "destination": "/product/fanta-450ml-zhb-24sht-7183",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-zhb-450-ml",
+    "destination": "/product/koka-kola-zhb-450-ml-24sht-9984",
+    "permanent": true
+  },
+  {
+    "source": "/product/vega-natura-napitok-kokosovyy-ultrapasterizovannyy-1l",
+    "destination": "/product/sirop-lesnoy-oreh-odk-steklo-0-75l-0999",
+    "permanent": true
+  },
+  {
+    "source": "/product/vega-natura-napitok-mindalnyy-ultrapasterizovannyy-1l",
+    "destination": "/product/vega-natura-napitok-mindalnyy-ultrapasterizovannyy-1l-1199",
+    "permanent": true
+  },
+  {
+    "source": "/product/vega-natura-napitok-soevo-bananovyy-ultrapasterizovannyy-1l",
+    "destination": "/product/vega-natura-napitok-soevo-bananovyy-ultrapasterizovannyy-1l-1198",
+    "permanent": true
+  },
+  {
+    "source": "/product/vega-natura-napitok-ovsyanyy-ultrapasterizovannyy-1l",
+    "destination": "/product/vega-natura-napitok-ovsyanyy-ultrapasterizovannyy-1l-1197",
+    "permanent": true
+  },
+  {
+    "source": "/product/sok-yablochnyy-neosvetlennyy-pryamogo-otzhima-dala-fruit-30l",
+    "destination": "/product/avocado-oil-n01-maslo-avokado-500-ml-7208",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl320-vkusoaromatichekaya-smes-sream-latte-bananovoe-morozhenoe-s-solenoy-karamelyu-500-gr",
+    "destination": "/product/ritter-sport-shokolad-molochnyy-s-kokos-nachinkoy-100gr-7206",
+    "permanent": true
+  },
+  {
+    "source": "/product/bonakva-negaz-pet-1l",
+    "destination": "/product/bonakva-negaz-pet-1l-0932",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-zhb-450-ml-bez-sahara",
+    "destination": "/product/koka-kola-zhb-450-ml-bez-sahara-12sht-99981",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-zero-05-pet",
+    "destination": "/product/koka-kola-zero-05-pet-9999",
+    "permanent": true
+  },
+  {
+    "source": "/product/tess-chay-zelenyy-pina-colada-20-piramidok",
+    "destination": "/product/tess-chay-zelenyy-pina-colada-20-piramidok-9877",
+    "permanent": true
+  },
+  {
+    "source": "/product/piko-mors-tetra1l",
+    "destination": "/product/piko-mors-tetra1l-0949",
+    "permanent": true
+  },
+  {
+    "source": "/product/local-coffee-locals-blend",
+    "destination": "/product/local-coffee-locals-blend-9996",
+    "permanent": true
+  },
+  {
+    "source": "/product/minvoda-turan-05-negaz",
+    "destination": "/product/min-voda-turan-0-5-negaz-9997",
+    "permanent": true
+  },
+  {
+    "source": "/product/topping-d-morozh-solenaya-karamel-pinchdrop-1kg-plastik",
+    "destination": "/product/topping-d-morozh-solenaya-karamel-pinch-drop-1kg-plastik-9865",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl252-vkusoaromatichekaya-smes-sream-latte-morkovnyy-pay-500-gr",
+    "destination": "/product/cl252-vkusoaromatichekaya-smes-sream-latte-morkovnyy-pay-500-gr-9994",
+    "permanent": true
+  },
+  {
+    "source": "/product/santa-maria-kopchennaya-paprika-230g",
+    "destination": "/product/santa-maria-kopchennaya-paprika-230g-0264",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml041-vkusoaromaticheskaya-smes-matcha-latte-zelyonaya-fistashkovaya-500gr",
+    "destination": "/product/ml041-vkusoaromaticheskaya-smes-matcha-latte-zelenaya-fistashkovaya-500gr-9991",
+    "permanent": true
+  },
+  {
+    "source": "/product/ml038-vkusoaromaticheskaya-smes-matcha-latte-rozovaya-sakura-500gr",
+    "destination": "/product/ml038-vkusoaromaticheskaya-smes-matcha-latte-rozovaya-sakura-500gr-9992",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms031-vkusoaromaticheskaya-smes-milk-shake-klubnichnyy-sheyk-500gr",
+    "destination": "/product/ms031-vkusoaromaticheskaya-smes-milk-shake-klubnichnyy-sheyk-500gr-9989",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms033-vkusoaromaticheskaya-smes-milk-shake-bananovyy-sheyk-500gr",
+    "destination": "/product/ms033-vkusoaromaticheskaya-smes-milk-shake-bananovyy-sheyk-500gr-9987",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms036-vkusoaromaticheskaya-smes-milk-shake-vaflya-popkorn-sheyk-500gr",
+    "destination": "/product/ms036-vkusoaromaticheskaya-smes-milk-shake-vaflya-popkorn-sheyk-500gr-9986",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch039-vkusoaromaticheskaya-smes-chocolatte-shokoladnyy-rubin-500gr",
+    "destination": "/product/ch039-vkusoaromaticheskaya-smes-chocolatte-shokoladnyy-rubin-500gr-9985",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl307-vkusoaromatichekaya-smes-sream-latte-syr-500-gr",
+    "destination": "/product/cl307-vkusoaromatichekaya-smes-sream-latte-syr-500-gr-9993",
+    "permanent": true
+  },
+  {
+    "source": "/product/ms032-vkusoaromaticheskaya-smes-milk-shake-shokoladnyy-sheyk-500gr",
+    "destination": "/product/ms032-vkusoaromaticheskaya-smes-milk-shake-shokoladnyy-sheyk-500gr-9988",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-uksus-yablochnyy-500-ml",
+    "destination": "/product/kinto-uksus-yablochnyy-500-ml-9873",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-persik-zhb-0450-ml",
+    "destination": "/product/fyus-chay-persik-zhb-450-ml-9859",
+    "permanent": true
+  },
+  {
+    "source": "/product/koka-kola-zero-1l",
+    "destination": "/product/koka-kola-zero-1l-9964",
+    "permanent": true
+  },
+  {
+    "source": "/product/fanta-1l-pet",
+    "destination": "/product/fanta-1l-pet-0907",
+    "permanent": true
+  },
+  {
+    "source": "/product/ritter-sport-mol-shokoladnoe-pechenie-s-orehami-100g",
+    "destination": "/product/ritter-sport-shokoladnoe-pechene-s-orehami-molchnyy-shokolad-100g-9866",
+    "permanent": true
+  },
+  {
+    "source": "/product/fanta-05-pet",
+    "destination": "/product/fanta-0-5-pet-24sht-0967",
+    "permanent": true
+  },
+  {
+    "source": "/product/geisha-konfety-iz-molochnogo-shokolada-s-orehovoy-nachinkoy-iz-funduka-150-gr",
+    "destination": "/product/milford-molochnyy-oolong-200-paketikov-7317",
+    "permanent": true
+  },
+  {
+    "source": "/product/fazer-shokolad-molochnyy200-gr",
+    "destination": "/product/milford-chernyy-chay-bez-kofeina-200-pak-7322",
+    "permanent": true
+  },
+  {
+    "source": "/product/fazer-shokolad-molochnyy-s-tselnym-fundukom-200-gr",
+    "destination": "/product/milford-chernyy-chay-oblepiha-lesnye-yagody-200-paketikov-7321",
+    "permanent": true
+  },
+  {
+    "source": "/product/fazer-shokolad-molochnyy-s-solenoy-karamelyu-180-gr",
+    "destination": "/product/milford-fruktovaya-mechta-200-paketikov-7320",
+    "permanent": true
+  },
+  {
+    "source": "/product/fazer-shokolad-gorkiy-200-gr",
+    "destination": "/product/milford-romashka-200-paketikov-7319",
+    "permanent": true
+  },
+  {
+    "source": "/product/karl-fazer-konfety-iz-molochnogo-shokolada-150-gr",
+    "destination": "/product/milford-myata-perechnaya-200-paketikov-7318",
+    "permanent": true
+  },
+  {
+    "source": "/product/real-tang-kunzhutnoe-maslo500-ml",
+    "destination": "/product/real-tang-kunzhutnoe-maslo-500-ml-9864",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonad-natahtari-apelsin-mandarin-033-zhb",
+    "destination": "/product/limonad-natahtari-apelsin-mandarin-033-zhb-9853",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonad-natahtari-grusha-033-zhb",
+    "destination": "/product/filippo-berio-maslo-olivkovoe-extra-virgin-s-chesnokom-250-ml-9854",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonad-natahtari-limon-laym-033-zhb",
+    "destination": "/product/wheat-village-lapsha-soba-grechnevaya-300-gr-9855",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonad-natahtari-tarhun-033-zhb",
+    "destination": "/product/limonad-natahtari-tarhun-033-zhb-9856",
+    "permanent": true
+  },
+  {
+    "source": "/product/kinto-gorchitsa-starorusskaya-170-gr",
+    "destination": "/product/kinto-gorchitsa-starorusskaya-170-gr-5549",
+    "permanent": true
+  },
+  {
+    "source": "/product/moloko-yasnyy-lug-25-1l-slim-s-kryshkoy",
+    "destination": "/product/moloko-yasnyy-lug-2-5-1l-slim-s-kryshkoy-9847",
+    "permanent": true
+  },
+  {
+    "source": "/product/moloko-yasnyy-lug-32-1l-slim-s-kryshkoy",
+    "destination": "/product/moloko-yasnyy-lug-3-2-1l-slim-s-kryshkoy-9845",
+    "permanent": true
+  },
+  {
+    "source": "/product/fyus-chay-klubnika-dynya-pet-05",
+    "destination": "/product/wheat-village-lapsha-soba-grechnevaya-300-gr-9855",
+    "permanent": true
+  },
+  {
+    "source": "/product/mineralnaya-voda-san-benedeto-025-l-steklo24-sht-c-gazom",
+    "destination": "/product/mineralnaya-voda-san-benedeto-025-l-steklo-24-sht-c-gazom-9869",
+    "permanent": true
+  },
+  {
+    "source": "/product/limonad-natahtari-saperavi-033-zhb",
+    "destination": "/product/limonad-natahtari-saperavi-033-zhb-9868",
+    "permanent": true
+  },
+  {
+    "source": "/product/illy-monoarabica-brazil-molotyy-250-gr",
+    "destination": "/product/illy-monoarabica-brazil-molotyy-250-gr-9840",
+    "permanent": true
+  },
+  {
+    "source": "/product/konfety-shokoladnye-s-likerom-fazer-150g",
+    "destination": "/product/fazer-konfety-shokoladnye-s-likerom-150g-9837",
+    "permanent": true
+  },
+  {
+    "source": "/product/konfety-shokoladnye-assorti-karl-fazer-selection-150g",
+    "destination": "/product/karl-fazer-selection-konfety-shokoladnye-assorti-150g-9836",
+    "permanent": true
+  },
+  {
+    "source": "/product/suhari-rzhanye-hrustyaschie-s-zharenym-pertsem-fazer-200g",
+    "destination": "/product/fazer-suhari-rzhanye-hrustyaschie-s-zharenym-pertsem-200g-9833",
+    "permanent": true
+  },
+  {
+    "source": "/product/pechenie-yablochnyy-shtrudel-apple-pie-merba-225g",
+    "destination": "/product/merba-apple-pie-pechene-yablochnyy-shtrudel-225g-9834",
+    "permanent": true
+  },
+  {
+    "source": "/product/konfety-iz-molochnogo-shosholada-morskoy-solyu-i-karameli-geisha-150g",
+    "destination": "/product/geisha-konfety-iz-molochnogo-shokolada-morskoy-solyu-i-karameli-150g-9838",
+    "permanent": true
+  },
+  {
+    "source": "/product/batonchik-proteinovyy-bez-sahara-dumle-45g",
+    "destination": "/product/dumle-batonchik-proteinovyy-bez-sahara-45g-9871",
+    "permanent": true
+  },
+  {
+    "source": "/product/hlebtsy-kukuruznye-s-shokoladom-i-hrustyaschey-karamelnoy-kroshkoy-dumle-33g",
+    "destination": "/product/dumle-hlebtsy-kukuruznye-s-shokoladom-i-hrustyaschey-karamelnoy-kroshkoy-33g-9879",
+    "permanent": true
+  },
+  {
+    "source": "/product/hlebtsy-kkukuruznye-s-belym-shokoladom-i-hrustyaschey-karamelnoy-kroshkoy-dumle-33g",
+    "destination": "/product/dumle-hlebtsy-kukuruznye-s-belym-shokoladom-i-hrustyaschey-karamelnoy-kroshkoy-3-9848",
+    "permanent": true
+  },
+  {
+    "source": "/product/suhari-rzhanye-hrustyaschie-fazer-200g",
+    "destination": "/product/fazer-suhari-rzhanye-hrustyaschie-200g-9844",
+    "permanent": true
+  },
+  {
+    "source": "/product/suhari-rzhanye-temnye-hrustyaschie-fazer-215g",
+    "destination": "/product/fazer-suhari-rzhanye-temnye-hrustyaschie-215g-9843",
+    "permanent": true
+  },
+  {
+    "source": "/product/suhari-rzhanye-hrustyaschie-s-rozmarinom-fazer-200g",
+    "destination": "/product/fazer-suhari-rzhanye-hrustyaschie-s-rozmarinom-200g-9842",
+    "permanent": true
+  },
+  {
+    "source": "/product/konfety-iz-molochnogo-shokolada-s-orehovoy-nachinkoy-iz-funduka-geisha-225g",
+    "destination": "/product/geisha-konfety-iz-molochnogo-shokolada-s-orehovoy-nachinkoy-iz-funduka-190g-9872",
+    "permanent": true
+  },
+  {
+    "source": "/product/iris-dumle-120g",
+    "destination": "/product/dumle-iris-120g-9870",
+    "permanent": true
+  },
+  {
+    "source": "/product/julius-meinl-braziliya-kataratas-1kg-zerno",
+    "destination": "/product/julius-meinl-braziliya-kataratas-1kg-zerno-9839",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-zernovoy-dallmayr-selection-do-brasil-1000g",
+    "destination": "/product/kofe-zernovoy-dallmayr-selection-do-brasil-1000g-9813",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-zernovoy-dallmayr-crema-prodomo-1000g",
+    "destination": "/product/kofe-zernovoy-dallmayr-crema-prodomo-1000g-9814",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-zernovoy-dallmayr-prodomo-500g",
+    "destination": "/product/kofe-zernovoy-dallmayr-prodomo-500g-9815",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-zernovoy-dallmayr-crema-doro-1000g",
+    "destination": "/product/kofe-zernovoy-dallmayr-crema-d-oro-1000g-9816",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-molotyy-dallmayr-classic-500g",
+    "destination": "/product/kofe-molotyy-dallmayr-classic-500g-9820",
+    "permanent": true
+  },
+  {
+    "source": "/product/kofe-molotyy-dallmayr-prodomo-500gnew",
+    "destination": "/product/kofe-molotyy-dallmayr-prodomo-500g-new-9821",
+    "permanent": true
+  },
+  {
+    "source": "/product/cl258-vkusoaromatichekaya-smes-sream-latte-tart-s-limonnoy-merengoy-500-gr",
+    "destination": "/product/cl258-vkusoaromatichekaya-smes-sream-latte-tart-s-limonnoy-merengoy-500-gr-3975",
+    "permanent": true
+  },
+  {
+    "source": "/product/ch034-vkusoaromaticheskaya-smes-chocolatte-apelsin-chili-500gr",
+    "destination": "/product/salfetki-vse-v-dom-viskoza-univ-5sht-3974",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-vanil-1l",
+    "destination": "/product/esco-sirop-vanil-1l-0343",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-solenaya-karamel-1l",
+    "destination": "/product/esco-sirop-solenaya-karamel-1l-3956",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-kokos-1l",
+    "destination": "/product/esco-sirop-kokos-1l-3947",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-klenovyy-1l",
+    "destination": "/product/esco-sirop-klenovyy-1l-3946",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-karamel-1l",
+    "destination": "/product/mcllhenny-sous-tabasco-zelenyy-perechnyy-57-ml-3945",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-popkorn-1l",
+    "destination": "/product/esco-sirop-popkorn-1l-3954",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-myata-1l",
+    "destination": "/product/esco-sirop-myata-1l-3953",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-lesnye-yagody-1l",
+    "destination": "/product/esco-sirop-lesnye-yagody-1l-3949",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-lesnoy-oreh-1l",
+    "destination": "/product/esco-sirop-lesnoy-oreh-1l-3948",
+    "permanent": true
+  },
+  {
+    "source": "/product/carte-noire-elegant-rastvorimyy-95-gr-2",
+    "destination": "/product/carte-noire-elegant-rastvorimyy-95-gr-3967",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-shokolad-1l",
+    "destination": "/product/esco-sirop-shokolad-1l-3957",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-malina-1l",
+    "destination": "/product/esco-sirop-malina-1l-3950",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-marakuyya-thailand-1l",
+    "destination": "/product/esco-sirop-marakuyya-thailand-1l-3952",
+    "permanent": true
+  },
+  {
+    "source": "/product/esco-sirop-mango-1l",
+    "destination": "/product/esco-sirop-mango-1l-3951",
+    "permanent": true
+  },
+  {
+    "source": "/product/kazbegi-grusha-05-l-steklo",
+    "destination": "/product/kazbegi-grusha-0-5-l-steklo-3961",
+    "permanent": true
+  },
+  {
+    "source": "/product/kazbegi-limon-05-steklo",
+    "destination": "/product/kazbegi-limon-0-5-steklo-3962",
+    "permanent": true
+  },
+  {
+    "source": "/product/kazbegi-feyhoa-05-steklo",
+    "destination": "/product/kazbegi-feyhoa-0-5-steklo-3964",
+    "permanent": true
+  },
+  {
+    "source": "/product/kazbegi-saperavi-05-steklo",
+    "destination": "/product/kazbegi-saperavi-0-5-steklo-3963",
+    "permanent": true
+  },
+  {
+    "source": "/product/slivki-adal-10-1l",
+    "destination": "/product/slivki-adal-10-0-925ml-9846",
+    "permanent": true
+  }
+]

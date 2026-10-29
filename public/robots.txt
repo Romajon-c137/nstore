@@ -1,0 +1,18 @@
+User-agent: *
+
+# Публичные страницы — индексировать
+Allow: /$
+Allow: /register
+Allow: /page/exchange
+Allow: /login
+Allow: /product/
+Allow: /catalog/
+Allow: /blog
+
+# Защищённые страницы — не индексировать
+Disallow: /cabinet
+Disallow: /cabinet/
+Disallow: /crm
+Disallow: /crm/
+
+Sitemap: https://nstore.kz/sitemap.xml

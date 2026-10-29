@@ -1,0 +1,31 @@
+-- ============================================================================
+-- Сети клиентов (2026-10-19): несколько контрагентов 1С (точки, ИП/ТОО франчайзи) = одна сеть.
+-- Миграции sales_chains + sales_chains_fix. Полные тексты функций — в Supabase → Migrations;
+-- здесь схема и назначение.
+-- ============================================================================
+-- analytics.chains(id, name unique, pattern — регулярка по названию, note)
+-- analytics.chain_members(client_ref pk → одна сеть на контрагента, chain_id, source manual|pattern, excluded)
+--   excluded = «не из этой сети»: правило по названию больше не добавит карточку.
+-- analytics.chain_autoassign(p_chain) — добавляет карточки по правилу; вызывается в sa_chain_save
+--   и в начале analytics.refresh_lines() (после каждой синхронизации с 1С).
+-- analytics.require_admin(), analytics.phone_from_text(text)
+-- RPC (admin/manager): sa_chains(from,to), sa_chain_detail(id,from,to), sa_chain_suggest(id,q)
+-- RPC (admin):         sa_chain_save(id,name,pattern,note), sa_chain_members(id,refs[],on)
+-- Стартовые сети: Espresso Day, Zebra Coffee, Master Coffee.
+--
+-- Статусы точек в sa_chain_detail: active ≤30 дн с последней закупки, sleeping 31–90, lost >90, never — нет продаж.
+-- «Перестали» в списке сетей: закупали в течение 365 дн, но не за последние 90 (на дату конца периода).
+
+-- ============================================================================
+-- Синхронизация с 1С (миграции chains_onec_sync, chains_onec_names, chains_onec_priority)
+-- ============================================================================
+-- 1С: доп. реквизит контрагента «Сеть» (Дополнительное значение); название сети в CRM = значение в 1С.
+-- chain_members + onec_pending, onec_value, onec_error, onec_pushed_at; source + 'onec'.
+-- Триггер chain_members_mark: изменение состава → onec_pending (кроме изменений, пришедших из 1С).
+-- Edge chains-onec-sync (cron каждые 10 мин):
+--   CRM → 1С: ch_push_queue → POST /hs/nstore_delivery/chain (СетьPOST в расширении) → ch_push_done
+--   1С → CRM: OData Catalog_Контрагенты_ДополнительныеРеквизиты (+ Catalog_ЗначенияСвойствОбъектов) → ch_apply_onec
+-- Приоритет: ручное изменение в CRM (не отправлено) > значение в 1С > автоподсказка по названию.
+-- Новое значение в списке 1С → новая сеть в CRM. Очистили в 1С → точка исключается из сети.
+-- Стартовые сети = значения списка 1С: Coffee Boom, CoffeeDay, Drinkit, DrinkStar, Espresso Day,
+--   Global Coffee, Luna Coffee, Master Coffee, One Cup, One Shot, Zebra, Автосалоны.

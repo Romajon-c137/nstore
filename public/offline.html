@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nstore — нет соединения</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100dvh; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(160deg, #0C1A13 0%, #10331F 100%);
+      font-family: system-ui, -apple-system, sans-serif; color: #EAFBF1;
+      padding: 24px; text-align: center;
+    }
+    .logo {
+      width: 84px; height: 84px; border-radius: 22px; margin: 0 auto 24px;
+      background: linear-gradient(135deg, #10A35B, #16B86A 45%, #7C3AED);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 42px;
+      box-shadow: 0 16px 50px rgba(16,163,91,.35);
+    }
+    h1 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+    p { font-size: 14px; color: #A9C0B2; line-height: 1.5; max-width: 320px; margin: 0 auto 24px; }
+    button {
+      background: #10A35B; color: #fff; border: none; border-radius: 13px;
+      padding: 13px 26px; font-size: 15px; font-weight: 700; font-family: inherit; cursor: pointer;
+    }
+    button:active { transform: scale(.96); }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="logo">N</div>
+    <h1>Нет соединения</h1>
+    <p>Проверьте интернет — последние загруженные данные доступны офлайн. Как только связь вернётся, всё обновится автоматически.</p>
+    <button onclick="location.reload()">Повторить</button>
+  </div>
+  <script>
+    window.addEventListener('online', () => location.reload())
+  </script>
+</body>
+</html>

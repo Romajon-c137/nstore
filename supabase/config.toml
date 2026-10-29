@@ -1,0 +1,2 @@
+[functions.notify-client-order-status]
+verify_jwt = false
