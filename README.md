@@ -9,6 +9,11 @@ npm ci
 npm run dev
 ```
 
+## Production: изображения товаров
+
+Импорт старых изображений, проверка media-файлов и подключение фотографий из 1С:
+[docs/PRODUCT_IMAGES_PRODUCTION.md](docs/PRODUCT_IMAGES_PRODUCTION.md).
+
 ## Существующие внешние сервисы
 
 ﻿**Внешние сервисы**
